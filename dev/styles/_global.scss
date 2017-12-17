@@ -1,0 +1,86 @@
+// variables
+
+$mont-text: 'Montserrat', sans-serif;
+$ral-text: 'Raleway', sans-serif;
+
+$white: rgb(254, 255, 253);
+$black: rgb(52,64,85);
+$grey: rgb(132,140,142);
+
+// mixins
+
+@mixin font-size-value($sizeValue){
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+}
+
+// wrappers
+.wrapper--max {
+    max-width: 2500px;
+    margin: 0 auto;
+}
+
+.wrapper--inner {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+// base size
+
+html {
+    font-size: 62.5%;
+}
+
+// general
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2, p {
+    color: $black;
+}
+
+h1 {
+    color: $white;
+    margin: 50vh auto;
+}
+
+section {
+    margin: 5vh 15px;
+}
+
+// headings
+
+.all-sections--sub-headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+// lines under sub headings
+.sub-headings--lines {
+    width: 200px;
+}
+
+.sub-headings--longer-line {
+        margin: 0 auto;
+        width: 80%;
+        height: 1px;
+        background: black;
+    }
+
+    .sub-headings--shorter-line {
+        margin: 8px auto;
+        width: 35%;
+        height: 1px;
+        background: black;
+    }

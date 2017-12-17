@@ -1,0 +1,17 @@
+.about-me {
+    background: $white;
+    padding: 1px;
+}
+
+.about-me--text-image-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-me--image {
+    width: 30%;
+}
+
+.about-me--text {
+    width: 60%;
+}

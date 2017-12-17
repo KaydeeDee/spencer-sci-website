@@ -92,12 +92,12 @@ button[disabled], input[disabled] {
   cursor: default; }
 
 input[type=checkbox], input[type=radio] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0; }
 
 input[type=search] {
   -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
@@ -128,6 +128,99 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   height: 0; }
 
 * {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+.wrapper--max {
+  max-width: 2500px;
+  margin: 0 auto; }
+
+.wrapper--inner {
+  max-width: 1180px;
+  margin: 0 auto; }
+
+html {
+  font-size: 62.5%; }
+
+ul {
+  list-style: none; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+
+h2, p {
+  color: #344055; }
+
+h1 {
+  color: #fefffd;
+  margin: 50vh auto; }
+
+section {
+  margin: 5vh 15px; }
+
+.all-sections--sub-headings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase; }
+
+.sub-headings--lines {
+  width: 200px; }
+
+.sub-headings--longer-line {
+  margin: 0 auto;
+  width: 80%;
+  height: 1px;
+  background: black; }
+
+.sub-headings--shorter-line {
+  margin: 8px auto;
+  width: 35%;
+  height: 1px;
+  background: black; }
+
+.nav--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: 25px;
+  position: fixed; }
+
+header {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(132, 140, 142, 0.6)), to(rgba(132, 140, 142, 0.6))), url(assets/mosscampion.jpg);
+  background: linear-gradient(rgba(132, 140, 142, 0.6), rgba(132, 140, 142, 0.6)), url(assets/mosscampion.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1px; }
+
+.about-me {
+  background: #fefffd;
+  padding: 1px; }
+
+.about-me--text-image-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.about-me--image {
+  width: 30%; }
+
+.about-me--text {
+  width: 60%; }
