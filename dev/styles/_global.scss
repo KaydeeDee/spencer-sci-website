@@ -1,11 +1,11 @@
 // variables
 
-$mont-text: 'Montserrat', sans-serif;
-$ral-text: 'Raleway', sans-serif;
+$main-text: 'Nunito Sans', sans-serif;
+$secondary-text: 'Open Sans', sans-serif;
 
 $white: rgb(254, 255, 253);
 $black: rgb(52,64,85);
-$grey: rgb(132,140,142);
+$light-grey: rgb(245, 246, 247);
 
 // mixins
 
@@ -21,7 +21,7 @@ $grey: rgb(132,140,142);
 }
 
 .wrapper--inner {
-    max-width: 1180px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -32,8 +32,16 @@ html {
 }
 
 // general
+
+body {
+    background: linear-gradient(rgba($white, 0.2), rgba($white, 0.2)), url(assets/topo.png);
+    padding: 1px;
+}
+
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -44,13 +52,16 @@ a {
     text-decoration: none;
 }
 
-h2, p {
+h1, h2, p {
     color: $black;
 }
 
-h1 {
-    color: $white;
-    margin: 50vh auto;
+h1, h2 {
+    font-family: $main-text;
+}
+
+p, a {
+    font-family: $secondary-text;
 }
 
 section {

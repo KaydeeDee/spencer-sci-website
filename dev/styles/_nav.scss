@@ -1,6 +1,26 @@
 .nav--flex {
     display: flex;
     flex-direction: column;
-    right: 25px;
+    right: 65px;
+    top: 80px;
+    text-align: right;
     position: fixed;
-}
+    a {
+        color: $black;
+        line-height: 30px;
+        }
+    }
+
+    .inner-circle--nav {
+        background: transparent;
+        height: 6px;
+        width: 6px;
+        display: inline-block;
+    }
+
+    .active-square--nav {
+        height: 6px;
+        width: 6px;
+        display: inline-block;
+        background: $black;
+    }

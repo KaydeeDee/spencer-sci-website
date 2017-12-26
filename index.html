@@ -6,7 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Spencer's Website</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="public/styles/style.css">
+	<link type="image/png" href="public/styles/assets/SKM-favicon.png" rel="icon">
 </head>
 	<main>
 		<body class="wrapper--max">
@@ -15,37 +18,43 @@
 				<div class="nav--flex">
 					<ul>
 						<li>
-							<a href="#">about</a>
+							<a href="#toTop">home
+							<div class="addZero inner-circle--nav"></div>
+							</a>
 						</li>
 						<li>
-							<a href="#">research</a>
+							<a href="#toAbout">about <div class="addOne inner-circle--nav"></div></a>
 						</li>
 						<li>
-							<a href="#">publications</a>
+							<a href="#toResearch">research</a>
 						</li>
 						<li>
-							<a href="#">education</a>
+							<a href="#toPublication">publications</a>
 						</li>
 						<li>
-							<a href="#">skills</a>
+							<a href="#toEducation">education</a>
 						</li>
 						<li>
-							<a href="#">contact</a>
+							<a href="#toSkills">skills</a>
+						</li>
+						<li>
+							<a href="#toContact"></a>
 						</li>
 					</ul>
 				</div>
 			</nav>
 			<!-- nav ends -->
 			<!-- header starts -->
-			<header>
+			<header class="wrapper--inner" id="topTop">
 				<div>
-					<img src="" alt="spencer's logo">
+					<img src="public/styles/assets/SKM-logo.png" alt="spencer's logo">
 				</div>
 				<h1>Spencer Monckton</h1>
+				<h2>phd does school things</h2>
 			</header>
 			<!-- header ends -->
 			<!-- about me starts -->
-			<section class="about-me">
+			<section class="about-me" id="toAbout">
 				<div class="all-sections--sub-headings">
 					<h2>about</h2>
 					<div class="sub-headings--lines">
@@ -68,7 +77,7 @@
 				</div>
 			</section>
 			<!-- about me ends -->
-			<section>
+			<section id="toResearch">
 				<div class="all-sections--sub-headings">
 					<h2>research</h2>
 					<div class="sub-headings--lines">
@@ -82,7 +91,7 @@
 					pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
 				</div>
 			</section>
-			<section>
+			<section id="toPublications">
 				<div class="all-sections--sub-headings">
 					<h2>publications</h2>
 					<div class="sub-headings--lines">
@@ -94,7 +103,7 @@
 					leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut
 					pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
 			</section>
-			<section>
+			<section id="toEducation">
 				<div class="all-sections--sub-headings">
 					<h2>education</h2>
 					<div class="sub-headings--lines">
@@ -106,7 +115,7 @@
 					leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut
 					pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
 			</section>
-			<section>
+			<section id="toSkills">
 				<div class="all-sections--sub-headings">
 					<h2>skills</h2>
 					<div class="sub-headings--lines">
@@ -118,7 +127,7 @@
 					leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut
 					pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
 			</section>
-			<section>
+			<section id="toContact">
 				<div class="all-sections--sub-headings">
 					<h2>contact</h2>
 					<div class="sub-headings--lines">
@@ -132,6 +141,9 @@
 			</section>
 			<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 			crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+			<script src="https://use.fontawesome.com/863f28bd20.js"></script>
+			<script src="public/scripts/jquery.waypoints.min.js"></script>
 			<script src="public/scripts/main.js"></script>
 		</body>
 	</main>	

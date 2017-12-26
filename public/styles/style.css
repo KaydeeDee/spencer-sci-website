@@ -136,14 +136,21 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   margin: 0 auto; }
 
 .wrapper--inner {
-  max-width: 1180px;
+  max-width: 1300px;
   margin: 0 auto; }
 
 html {
   font-size: 62.5%; }
 
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(254, 255, 253, 0.2)), to(rgba(254, 255, 253, 0.2))), url(assets/topo.png);
+  background: linear-gradient(rgba(254, 255, 253, 0.2), rgba(254, 255, 253, 0.2)), url(assets/topo.png);
+  padding: 1px; }
+
 ul {
-  list-style: none; }
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
 img {
   max-width: 100%; }
@@ -151,12 +158,14 @@ img {
 a {
   text-decoration: none; }
 
-h2, p {
+h1, h2, p {
   color: #344055; }
 
-h1 {
-  color: #fefffd;
-  margin: 50vh auto; }
+h1, h2 {
+  font-family: "Nunito Sans", sans-serif; }
+
+p, a {
+  font-family: "Open Sans", sans-serif; }
 
 section {
   margin: 5vh 15px; }
@@ -197,19 +206,33 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  right: 25px;
+  right: 65px;
+  top: 80px;
+  text-align: right;
   position: fixed; }
+  .nav--flex a {
+    color: #344055;
+    line-height: 30px; }
 
-header {
-  min-height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(132, 140, 142, 0.6)), to(rgba(132, 140, 142, 0.6))), url(assets/mosscampion.jpg);
-  background: linear-gradient(rgba(132, 140, 142, 0.6), rgba(132, 140, 142, 0.6)), url(assets/mosscampion.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 1px; }
+.inner-circle--nav {
+  background: transparent;
+  height: 6px;
+  width: 6px;
+  display: inline-block; }
+
+.active-square--nav {
+  height: 6px;
+  width: 6px;
+  display: inline-block;
+  background: #344055; }
+
+h1, h2 {
+  text-align: center; }
+
+header h2 {
+  text-transform: uppercase; }
 
 .about-me {
-  background: #fefffd;
   padding: 1px; }
 
 .about-me--text-image-flex {
