@@ -1,0 +1,12 @@
+footer {
+    padding: 1px;
+}
+
+footer a {
+    display: block;
+    text-align: center;
+    border: 1px solid $light-grey;
+    border-bottom: none;
+    padding: 10px 0;
+    @include font-size-value(10);
+}

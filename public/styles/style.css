@@ -136,13 +136,17 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   margin: 0 auto; }
 
 .wrapper--inner {
-  max-width: 1300px;
+  max-width: 1250px;
+  margin: 60px auto; }
+
+.wrapper--inner-no-margin {
+  max-width: 1250px;
   margin: 0 auto; }
 
 html {
   font-size: 62.5%; }
 
-body {
+main {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(254, 255, 253, 0.2)), to(rgba(254, 255, 253, 0.2))), url(assets/topo.png);
   background: linear-gradient(rgba(254, 255, 253, 0.2), rgba(254, 255, 253, 0.2)), url(assets/topo.png);
   padding: 1px; }
@@ -162,13 +166,18 @@ h1, h2, p {
   color: #344055; }
 
 h1, h2 {
-  font-family: "Nunito Sans", sans-serif; }
+  font-family: "Nunito Sans", sans-serif;
+  margin-bottom: 10px;
+  margin-top: 0; }
 
 p, a {
   font-family: "Open Sans", sans-serif; }
 
 section {
-  margin: 5vh 15px; }
+  padding: 40px 0px; }
+
+.section--specifics {
+  background: #f5f6f7; }
 
 .all-sections--sub-headings {
   display: -webkit-box;
@@ -181,22 +190,25 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-size: 20px;
+  font-size: 2rem; }
 
 .sub-headings--lines {
-  width: 200px; }
+  width: 300px; }
 
 .sub-headings--longer-line {
   margin: 0 auto;
   width: 80%;
-  height: 1px;
-  background: black; }
+  height: 3px;
+  background: #344055; }
 
 .sub-headings--shorter-line {
   margin: 8px auto;
   width: 35%;
-  height: 1px;
-  background: black; }
+  height: 3px;
+  background: #344055; }
 
 .nav--flex {
   display: -webkit-box;
@@ -206,34 +218,73 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  right: 65px;
-  top: 80px;
+  right: 110px;
+  top: 140px;
   text-align: right;
   position: fixed; }
   .nav--flex a {
     color: #344055;
-    line-height: 30px; }
+    line-height: 35px;
+    font-size: 18px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.7px; }
 
 .inner-circle--nav {
   background: transparent;
-  height: 6px;
-  width: 6px;
+  height: 8px;
+  width: 8px;
   display: inline-block; }
 
 .active-square--nav {
-  height: 6px;
-  width: 6px;
+  height: 8px;
+  width: 8px;
   display: inline-block;
-  background: #344055; }
+  background: #344055;
+  position: relative;
+  top: -2px; }
 
-h1, h2 {
-  text-align: center; }
+.centering-text--header {
+  text-align: center;
+  margin-top: 5vh;
+  background: #f5f6f7;
+  padding: 15vh 0; }
+  .centering-text--header h1 {
+    font-size: 45px;
+    font-size: 4.5rem;
+    margin-bottom: 0;
+    letter-spacing: 2px; }
+  .centering-text--header h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-size: 3.5rem;
+    margin-top: 10px;
+    letter-spacing: 1.5px; }
 
-header h2 {
-  text-transform: uppercase; }
+.logo-socials--header {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 18px;
+  font-size: 1.8rem; }
 
-.about-me {
-  padding: 1px; }
+.socials--header-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.logo-socials--header-img {
+  width: 70%; }
+
+.logo-socials--header-socials {
+  width: 30%;
+  margin-top: 20px; }
 
 .about-me--text-image-flex {
   display: -webkit-box;
@@ -247,3 +298,15 @@ header h2 {
 
 .about-me--text {
   width: 60%; }
+
+footer {
+  padding: 1px; }
+
+footer a {
+  display: block;
+  text-align: center;
+  border: 1px solid #f5f6f7;
+  border-bottom: none;
+  padding: 10px 0;
+  font-size: 10px;
+  font-size: 1rem; }

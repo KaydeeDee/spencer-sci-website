@@ -11,12 +11,12 @@
 	<link rel="stylesheet" href="public/styles/style.css">
 	<link type="image/png" href="public/styles/assets/SKM-favicon.png" rel="icon">
 </head>
-	<main>
-		<body class="wrapper--max">
+	<body class="wrapper--max">
+		<main>
 			<!-- nav starts -->
-			<nav role="navigation">
+			<nav>
 				<div class="nav--flex">
-					<ul>
+					<ul role="navigation">
 						<li>
 							<a href="#toTop">home
 							<div class="addZero inner-circle--nav"></div>
@@ -26,35 +26,47 @@
 							<a href="#toAbout">about <div class="addOne inner-circle--nav"></div></a>
 						</li>
 						<li>
-							<a href="#toResearch">research</a>
+							<a href="#toResearch">research <div class="addTwo inner-circle--nav"></div></a>
 						</li>
 						<li>
-							<a href="#toPublication">publications</a>
+							<a href="#toPublications">publications <div class="addThree inner-circle--nav"></div></a>
 						</li>
 						<li>
-							<a href="#toEducation">education</a>
+							<a href="#toEducation">education <div class="addFour inner-circle--nav"></div></a>
 						</li>
 						<li>
-							<a href="#toSkills">skills</a>
+							<a href="#toSkills">skills <div class="addFive inner-circle--nav"></div></a>
 						</li>
 						<li>
-							<a href="#toContact"></a>
+							<a href="#toContact"> <div class="addSix inner-circle--nav"></div></a>
 						</li>
 					</ul>
 				</div>
 			</nav>
 			<!-- nav ends -->
 			<!-- header starts -->
-			<header class="wrapper--inner" id="topTop">
-				<div>
-					<img src="public/styles/assets/SKM-logo.png" alt="spencer's logo">
+			<header class="wrapper--inner-no-margin" id="toTop">
+				<div class="logo-socials--header">
+					<div class="logo-socials--header-img">
+						<img src="public/styles/assets/SKM-logo.png" alt="spencer's logo">
+					</div>
+					<div class="logo-socials--header-socials">
+						<ul class="socials--header-footer">
+							<li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+							<li>google scholar</li>
+							<li>orchid</li>
+							<li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+						</ul>
+					</div>
 				</div>
-				<h1>Spencer Monckton</h1>
-				<h2>phd does school things</h2>
+				<div class="centering-text--header">
+					<h1>Spencer Monckton</h1>
+					<h2>phd does school things</h2>
+				</div>
 			</header>
 			<!-- header ends -->
 			<!-- about me starts -->
-			<section class="about-me" id="toAbout">
+			<section class="section--specifics wrapper--inner about-me--nav" id="toAbout">
 				<div class="all-sections--sub-headings">
 					<h2>about</h2>
 					<div class="sub-headings--lines">
@@ -62,7 +74,7 @@
 						<div class="sub-headings--shorter-line"></div>
 					</div>
 				</div>
-				<div class="about-me--text-image-flex wrapper--inner">
+				<div class="about-me--text-image-flex">
 					<div class="about-me--image">
 						<img src="public/styles/assets/profilephoto.jpg" alt="Photo of Spencer Monckton">
 					</div>
@@ -77,7 +89,7 @@
 				</div>
 			</section>
 			<!-- about me ends -->
-			<section id="toResearch">
+			<section class="section--specifics wrapper--inner research-section--nav" id="toResearch">
 				<div class="all-sections--sub-headings">
 					<h2>research</h2>
 					<div class="sub-headings--lines">
@@ -91,7 +103,7 @@
 					pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
 				</div>
 			</section>
-			<section id="toPublications">
+			<section class="section--specifics wrapper--inner publications-section--nav" id="toPublications">
 				<div class="all-sections--sub-headings">
 					<h2>publications</h2>
 					<div class="sub-headings--lines">
@@ -103,7 +115,7 @@
 					leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut
 					pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
 			</section>
-			<section id="toEducation">
+			<section class="section--specifics wrapper--inner education-section--nav" id="toEducation">
 				<div class="all-sections--sub-headings">
 					<h2>education</h2>
 					<div class="sub-headings--lines">
@@ -115,7 +127,7 @@
 					leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut
 					pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
 			</section>
-			<section id="toSkills">
+			<section class="section--specifics wrapper--inner skills-section--nav" id="toSkills">
 				<div class="all-sections--sub-headings">
 					<h2>skills</h2>
 					<div class="sub-headings--lines">
@@ -127,7 +139,7 @@
 					leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut
 					pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
 			</section>
-			<section id="toContact">
+			<section class="section--specifics wrapper--inner contact-section--nav" id="toContact">
 				<div class="all-sections--sub-headings">
 					<h2>contact</h2>
 					<div class="sub-headings--lines">
@@ -139,13 +151,14 @@
 					leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut
 					pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
 			</section>
-			<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-			crossorigin="anonymous"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
-			<script src="https://use.fontawesome.com/863f28bd20.js"></script>
-			<script src="public/scripts/jquery.waypoints.min.js"></script>
-			<script src="public/scripts/main.js"></script>
-		</body>
-	</main>	
+			<footer class="wrapper--inner-no-margin">
+				<a href="#">Website created by Katie!</a>
+			</footer>
+		</main>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+		<script src="https://use.fontawesome.com/863f28bd20.js"></script>
+		<script src="public/scripts/jquery.waypoints.min.js"></script>
+		<script src="public/scripts/main.js"></script>
+	</body>
 </html>
-

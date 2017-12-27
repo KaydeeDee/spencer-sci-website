@@ -1,9 +1,38 @@
-
-h1, h2 {
+.centering-text--header {
     text-align: center;
+    margin-top: 5vh;
+    background: $light-grey;
+    padding: 15vh 0;
+    h1 {
+        @include font-size-value(45);
+        margin-bottom: 0;
+        letter-spacing: 2px;
+    }
+    h2 {
+        text-transform: uppercase;
+        @include font-size-value(35);
+        margin-top: 10px;
+        letter-spacing: 1.5px;
+    }
 }
 
-header h2 {
-    text-transform: uppercase;
+.logo-socials--header {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    @include font-size-value(18);
 }
 
+.socials--header-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-socials--header-img {
+    width: 70%;
+}
+
+.logo-socials--header-socials {
+    width: 30%;
+    margin-top: 20px;
+}
