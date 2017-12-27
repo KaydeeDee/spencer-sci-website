@@ -11,6 +11,10 @@
         @include font-size-value(18);
         text-transform: uppercase;
         letter-spacing: 0.7px;
+        transition: 0.3s;
+        &:hover {
+            color: $accent;
+        }
         }
     }
 
@@ -29,3 +33,11 @@
         position: relative;
         top: -2px;
     }
+
+    // media queries
+
+@media (max-width: 1332px) { 
+    .nav--flex {
+        display: none;
+    }
+}

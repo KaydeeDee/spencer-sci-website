@@ -9,4 +9,8 @@ footer a {
     border-bottom: none;
     padding: 10px 0;
     @include font-size-value(10);
+    transition: 0.4s;
+    &:hover {
+        color: $accent;
+    }
 }

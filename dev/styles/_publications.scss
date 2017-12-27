@@ -1,0 +1,16 @@
+.publication--section-left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.publication--section-left--img {
+    margin-left: 90px;
+    margin-right: 50px;
+    flex-shrink: 0;
+
+}
+
+.publication--section-left--text {
+    margin-right: 120px;
+    margin-top: 20px;
+}

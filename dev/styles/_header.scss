@@ -21,6 +21,12 @@
     display: flex;
     justify-content: space-between;
     @include font-size-value(18);
+    a {
+        transition: 0.3s;
+        &:hover {
+            color: $accent;
+        }
+    }
 }
 
 .socials--header-footer {
@@ -35,4 +41,10 @@
 .logo-socials--header-socials {
     width: 30%;
     margin-top: 20px;
+}
+
+@media (max-width: 1332px) {
+    .logo-socials--header-socials {
+        display: none;
+    }
 }

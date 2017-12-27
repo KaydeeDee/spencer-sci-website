@@ -6,6 +6,7 @@ $secondary-text: 'Open Sans', sans-serif;
 $white: rgb(254, 255, 253);
 $black: rgb(52,64,85);
 $light-grey: rgb(245, 246, 247);
+$accent: rgb(40,139,206);
 
 // mixins
 
@@ -57,7 +58,7 @@ a {
     text-decoration: none;
 }
 
-h1, h2, p {
+h1, h2, p, a {
     color: $black;
 }
 
@@ -69,14 +70,23 @@ h1, h2 {
 
 p, a {
     font-family: $secondary-text;
+    @include font-size-value(16);
+}
+
+p {
+    line-height: 29px;
 }
 
 section {
-    padding: 40px 0px;
+    padding: 40px 10px;
 }
 
 .section--specifics  {
     background: $light-grey;
+}
+
+.section--text {
+    padding: 0 30px;
 }
 
 // headings
@@ -102,9 +112,46 @@ section {
         background: $black;
     }
 
-    .sub-headings--shorter-line {
-        margin: 8px auto;
-        width: 35%;
-        height: 3px;
-        background: $black;
+.sub-headings--shorter-line {
+    margin: 8px auto;
+    width: 35%;
+    height: 3px;
+    background: $black;
+}
+
+// media queries
+@media (max-width: 1795px) { 
+    .wrapper--inner {
+    max-width: 1000px;
+    margin: 60px auto;
     }
+
+    .wrapper--inner-no-margin {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1529px) { 
+    .wrapper--inner {
+    max-width: 800px;
+    margin: 60px auto;
+    }
+
+    .wrapper--inner-no-margin {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1332px) { 
+    .wrapper--inner {
+    max-width: 90%;
+    margin: 60px auto;
+    }
+
+    .wrapper--inner-no-margin {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}

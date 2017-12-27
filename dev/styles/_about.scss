@@ -9,4 +9,9 @@
 
 .about-me--text {
     width: 60%;
+    a {
+        display: inline-block;
+        border: 3px solid $black;
+        padding: 10px 15px;
+    }
 }
