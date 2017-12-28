@@ -1,10 +1,24 @@
 .education--levels {
     font-weight: 700;
-    @include font-size-value(19)
+    @include font-size-value(22)
 }
 
 .education--text {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.education--text-indv {
+    display: flex;
+}
+
+.education--text-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    p {
+        margin: 0;
+        padding: 0;
+    }
 }

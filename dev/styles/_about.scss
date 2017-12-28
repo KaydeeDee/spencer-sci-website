@@ -4,11 +4,11 @@
 }
 
 .about-me--image {
-    width: 30%;
+    flex-shrink: 0;
 }
 
 .about-me--text {
-    width: 60%;
+    max-width: 560px;
     a {
         display: inline-block;
         border: 3px solid $black;

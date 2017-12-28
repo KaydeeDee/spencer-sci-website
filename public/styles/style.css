@@ -288,17 +288,17 @@ section {
 .centering-text--header {
   text-align: center;
   margin-top: 5vh;
-  background: #f5f6f7;
+  background: rgba(245, 246, 247, 0.7);
   padding: 15vh 0; }
   .centering-text--header h1 {
-    font-size: 45px;
-    font-size: 4.5rem;
+    font-size: 55px;
+    font-size: 5.5rem;
     margin-bottom: 0;
     letter-spacing: 2px; }
   .centering-text--header h2 {
     text-transform: uppercase;
-    font-size: 35px;
-    font-size: 3.5rem;
+    font-size: 30px;
+    font-size: 3rem;
     margin-top: 10px;
     letter-spacing: 1.5px; }
 
@@ -344,10 +344,11 @@ section {
       justify-content: space-around; }
 
 .about-me--image {
-  width: 30%; }
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
 
 .about-me--text {
-  width: 60%; }
+  max-width: 560px; }
   .about-me--text a {
     display: inline-block;
     border: 3px solid #344055;
@@ -355,8 +356,8 @@ section {
 
 .education--levels {
   font-weight: 700;
-  font-size: 19px;
-  font-size: 1.9rem; }
+  font-size: 22px;
+  font-size: 2.2rem; }
 
 .education--text {
   display: -webkit-box;
@@ -369,6 +370,24 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.education--text-indv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.education--text-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 40px; }
+  .education--text-details p {
+    margin: 0;
+    padding: 0; }
 
 .publication--section-left, .publication--section-right {
   display: -webkit-box;
@@ -388,7 +407,7 @@ section {
 .publication--section--img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  max-width: 400px; }
+  max-width: 200px; }
 
 .publication--section-left--text, .publication--section-right--text {
   max-width: 600px;
@@ -402,13 +421,16 @@ section {
   margin-left: 20px; }
 
 footer {
-  padding: 1px; }
+  padding: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 footer a {
-  display: block;
-  text-align: center;
-  border: 1px solid #f5f6f7;
-  border-bottom: none;
+  display: inline-block;
   padding: 10px 0;
   font-size: 10px;
   font-size: 1rem;

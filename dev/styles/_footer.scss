@@ -1,12 +1,11 @@
 footer {
     padding: 1px;
+    display: flex;
+    justify-content: center;
 }
 
 footer a {
-    display: block;
-    text-align: center;
-    border: 1px solid $light-grey;
-    border-bottom: none;
+    display: inline-block;
     padding: 10px 0;
     @include font-size-value(10);
     transition: 0.4s;
