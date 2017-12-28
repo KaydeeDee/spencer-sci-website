@@ -1,16 +1,31 @@
-.publication--section-left {
+.publication--section-left, .publication--section-right  {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.publication--section-left--img {
-    margin-left: 90px;
-    margin-right: 50px;
-    flex-shrink: 0;
+.publication--section-left {
+    flex-wrap: wrap;
+}
 
+.publication--section-right {
+    flex-wrap: wrap-reverse;
+}
+
+.publication--section--img {
+    flex-shrink: 0; 
+    max-width: 400px;
+}
+
+.publication--section-left--text, .publication--section-right--text {
+    max-width: 600px;
+    min-height: 150px;
+    margin-top: 20px;
+}
+
+.publication--section-right--text {
+    margin-right: 20px;
 }
 
 .publication--section-left--text {
-    margin-right: 120px;
-    margin-top: 20px;
+    margin-left: 20px;
 }

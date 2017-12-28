@@ -149,7 +149,8 @@ html {
 main {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(254, 255, 253, 0.2)), to(rgba(254, 255, 253, 0.2))), url(assets/topo.png);
   background: linear-gradient(rgba(254, 255, 253, 0.2), rgba(254, 255, 253, 0.2)), url(assets/topo.png);
-  padding: 1px; }
+  padding: 1px;
+  background-attachment: fixed; }
 
 ul {
   list-style: none;
@@ -228,10 +229,10 @@ section {
 
 @media (max-width: 1529px) {
   .wrapper--inner {
-    max-width: 800px;
+    max-width: 945px;
     margin: 60px auto; }
   .wrapper--inner-no-margin {
-    max-width: 800px;
+    max-width: 945px;
     margin: 0 auto; } }
 
 @media (max-width: 1332px) {
@@ -250,7 +251,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  right: 110px;
+  right: 70px;
   top: 140px;
   text-align: right;
   position: fixed; }
@@ -369,23 +370,36 @@ section {
       -ms-flex-align: center;
           align-items: center; }
 
-.publication--section-left {
+.publication--section-left, .publication--section-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
-.publication--section-left--img {
-  margin-left: 90px;
-  margin-right: 50px;
+.publication--section-left {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.publication--section-right {
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse; }
+
+.publication--section--img {
   -ms-flex-negative: 0;
-      flex-shrink: 0; }
+      flex-shrink: 0;
+  max-width: 400px; }
+
+.publication--section-left--text, .publication--section-right--text {
+  max-width: 600px;
+  min-height: 150px;
+  margin-top: 20px; }
+
+.publication--section-right--text {
+  margin-right: 20px; }
 
 .publication--section-left--text {
-  margin-right: 120px;
-  margin-top: 20px; }
+  margin-left: 20px; }
 
 footer {
   padding: 1px; }

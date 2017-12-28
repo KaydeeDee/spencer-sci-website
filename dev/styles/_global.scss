@@ -42,6 +42,7 @@ html {
 main {
     background: linear-gradient(rgba($white, 0.2), rgba($white, 0.2)), url(assets/topo.png);
     padding: 1px;
+    background-attachment: fixed;
 }
 
 ul {
@@ -134,12 +135,12 @@ section {
 
 @media (max-width: 1529px) { 
     .wrapper--inner {
-    max-width: 800px;
+    max-width: 945px;
     margin: 60px auto;
     }
 
     .wrapper--inner-no-margin {
-        max-width: 800px;
+        max-width: 945px;
         margin: 0 auto;
     }
 }
