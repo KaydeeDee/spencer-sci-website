@@ -202,22 +202,41 @@ section {
   text-transform: uppercase;
   letter-spacing: 1.3px;
   font-size: 20px;
-  font-size: 2rem; }
+  font-size: 2rem;
+  margin-bottom: 20px; }
+  .all-sections--sub-headings h2 {
+    margin-bottom: 8px; }
 
 .sub-headings--lines {
   width: 300px; }
 
-.sub-headings--longer-line {
-  margin: 0 auto;
-  width: 80%;
-  height: 3px;
-  background: #344055; }
-
 .sub-headings--shorter-line {
-  margin: 8px auto;
+  margin: 0 auto;
   width: 35%;
   height: 3px;
   background: #344055; }
+
+.button-global {
+  display: inline-block;
+  border: 3px solid #344055;
+  padding: 11px 15px;
+  text-transform: uppercase;
+  margin-top: 10px; }
+  .button-global:hover {
+    margin-top: 3px;
+    border: none;
+    border-left: 3px solid #288bce;
+    color: #288bce; }
+  .button-global:active {
+    margin-top: 3px;
+    border: none;
+    border-right: 3px solid #288bce;
+    color: #288bce; }
+  .button-global:focus {
+    margin-top: 3px;
+    border: none;
+    border-right: 3px solid #288bce;
+    color: #288bce; }
 
 @media (max-width: 1795px) {
   .wrapper--inner {
@@ -341,18 +360,17 @@ section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .about-me--image {
   -ms-flex-negative: 0;
       flex-shrink: 0; }
 
 .about-me--text {
-  max-width: 560px; }
-  .about-me--text a {
-    display: inline-block;
-    border: 3px solid #344055;
-    padding: 10px 15px; }
+  width: 60%;
+  padding-left: 25px; }
 
 .education--levels {
   font-weight: 700;

@@ -39,4 +39,5 @@ $(function () {
         $(".addSix").addClass("active-square--nav");
     }), { offset: 100 };
 
+
 });

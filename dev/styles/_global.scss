@@ -99,6 +99,10 @@ section {
     text-transform: uppercase;
     letter-spacing: 1.3px;
     @include font-size-value(20);
+    margin-bottom: 20px;
+    h2 {
+        margin-bottom: 8px;
+    }
 }
 
 // lines under sub headings
@@ -106,18 +110,38 @@ section {
     width: 300px;
 }
 
-.sub-headings--longer-line {
-        margin: 0 auto;
-        width: 80%;
-        height: 3px;
-        background: $black;
-    }
-
 .sub-headings--shorter-line {
-    margin: 8px auto;
+    margin: 0 auto;
     width: 35%;
     height: 3px;
     background: $black;
+}
+
+// buttons
+.button-global {
+    display: inline-block;
+    border: 3px solid $black;
+    padding: 11px 15px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    &:hover {
+        margin-top: 3px;
+        border: none;
+        border-left: 3px solid $accent;
+        color: $accent;
+    }
+    &:active {
+        margin-top: 3px;
+        border: none;
+        border-right: 3px solid $accent;
+        color: $accent;
+    }
+    &:focus {
+        margin-top: 3px;
+        border: none;
+        border-right: 3px solid $accent;
+        color: $accent;
+    }
 }
 
 // media queries
