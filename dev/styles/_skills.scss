@@ -1,6 +1,7 @@
 .skills--icons {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     img {
         max-width: 80%;
     }
@@ -47,5 +48,15 @@ li {
         font-family: $main-text;
         font-weight: 700;
         
+    }
+}
+
+.skills--icons-indv--mapping-text {
+    background: $white;
+    width: 650px;
+    height: 150px;
+    display: none;
+    p {
+        @include font-size-value(18);
     }
 }

@@ -500,7 +500,9 @@ section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   .skills--icons img {
     max-width: 80%; }
 
@@ -536,8 +538,17 @@ li {
     font-family: "Nunito Sans", sans-serif;
     font-weight: 700; }
 
+.skills--icons-indv--mapping-text {
+  background: #fefffd;
+  width: 650px;
+  height: 150px;
+  display: none; }
+  .skills--icons-indv--mapping-text p {
+    font-size: 18px;
+    font-size: 1.8rem; }
+
 .contact--socials {
-  width: 720px;
+  max-width: 720px;
   margin: 0 auto;
   margin-top: 30px;
   display: -webkit-box;

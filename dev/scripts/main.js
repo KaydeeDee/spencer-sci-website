@@ -39,12 +39,24 @@ $(function () {
         $(".addSix").addClass("active-square--nav");
     }), { offset: 100 };
 
-    $('.contact--socials-indv ').hover(function() {
-        $(this).addClass("contact--socials-indv--hover");},
-        function() {
-        $(this).removeClass("contact--socials-indv--hover");
-        }
+    // skills hover pop up
+    
+    $('.skills--icons-indv--mapping').on('click', function () {
+        $(".skills--icons-indv--mapping-text").slideToggle("slow");
+        $(".skills--icons-indv--mapping").mouseleave ( function () {
+            $(".skills--icons-indv--mapping-text").slideUp("slow");
+        })
+    
+    });
 
-    );
+
+    // hover state in contact
+
+    // $('.contact--socials-indv').hover(function() {
+    //     $(this).addClass("contact--socials-indv--hover");},
+    //     function() {
+    //     $(this).removeClass("contact--socials-indv--hover");
+    //     }
+    // );
 
 });
