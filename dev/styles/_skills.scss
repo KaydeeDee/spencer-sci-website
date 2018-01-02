@@ -1,0 +1,51 @@
+.skills--icons {
+    display: flex;
+    justify-content: space-around;
+    img {
+        max-width: 80%;
+    }
+}
+
+li {
+    width: 180px;
+}
+
+.skills--icons-indv {
+    transition: 0.4s linear;
+    position: relative;
+    &:hover {
+    .skills-icons-on-hover {
+        display: inline-block;
+    }
+    &:active {
+        .skills-icons-on-hover {
+        display: inline-block;
+        }
+    }
+    &:focus {
+        .skills-icons-on-hover {
+        display: inline-block;
+        }
+    }
+}
+    
+}
+
+.skills-icons-on-hover {
+    width: 144px;
+    height: 144px;
+    background: rgba($white, 0.8);
+    display: none;
+    transition: 0.6s linear;
+    position: absolute;
+    right: 37px;
+    p {
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 45%;
+        @include font-size-value(16);
+        font-family: $main-text;
+        font-weight: 700;
+        
+    }
+}

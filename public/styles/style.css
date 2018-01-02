@@ -495,6 +495,47 @@ section {
 .publications--buttons-2nd {
   margin-left: 10px; }
 
+.skills--icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .skills--icons img {
+    max-width: 80%; }
+
+li {
+  width: 180px; }
+
+.skills--icons-indv {
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+  position: relative; }
+  .skills--icons-indv:hover .skills-icons-on-hover {
+    display: inline-block; }
+  .skills--icons-indv:hover:active .skills-icons-on-hover {
+    display: inline-block; }
+  .skills--icons-indv:hover:focus .skills-icons-on-hover {
+    display: inline-block; }
+
+.skills-icons-on-hover {
+  width: 144px;
+  height: 144px;
+  background: rgba(254, 255, 253, 0.8);
+  display: none;
+  -webkit-transition: 0.6s linear;
+  transition: 0.6s linear;
+  position: absolute;
+  right: 37px; }
+  .skills-icons-on-hover p {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 45%;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700; }
+
 .contact--socials {
   width: 720px;
   margin: 0 auto;
