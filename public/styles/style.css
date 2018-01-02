@@ -231,33 +231,33 @@ section {
   .button-global:hover {
     margin-top: 13px;
     border: none;
+    border-left: 3px solid #f19032;
     border-right: 3px solid transparent;
-    border-left: 3px solid #288bce;
-    color: #288bce; }
+    color: #f19032; }
   .button-global:active {
     margin-top: 13px;
     border: none;
     border-left: 3px solid transparent;
-    border-right: 3px solid #288bce;
-    color: #288bce; }
+    border-right: 3px solid #f19032;
+    color: #f19032; }
   .button-global:focus {
     margin-top: 13px;
     border: none;
-    border-right: 3px solid #288bce;
+    border-right: 3px solid #f19032;
     border-left: 3px solid transparent;
-    color: #288bce; }
+    color: #f19032; }
 
 .anchor-in-text--global {
-  border-bottom: 1.5px solid #288bce;
+  border-bottom: 1.5px solid #f19032;
   padding: 1px;
   -webkit-transition: 0.2s;
   transition: 0.2s; }
   .anchor-in-text--global:hover {
-    color: #288bce; }
+    color: #f19032; }
   .anchor-in-text--global:active {
-    color: #288bce; }
+    color: #f19032; }
   .anchor-in-text--global:focus {
-    color: #288bce; }
+    color: #f19032; }
 
 @media (max-width: 1795px) {
   .wrapper--inner {
@@ -305,7 +305,7 @@ section {
     -webkit-transition: 0.3s;
     transition: 0.3s; }
     .nav--flex a:hover {
-      color: #288bce; }
+      color: #f19032; }
 
 .inner-circle--nav {
   background: transparent;
@@ -356,7 +356,7 @@ section {
     -webkit-transition: 0.3s;
     transition: 0.3s; }
     .logo-socials--header a:hover {
-      color: #288bce; }
+      color: #f19032; }
 
 .socials--header-footer {
   display: -webkit-box;
@@ -367,11 +367,30 @@ section {
 
 .logo-socials--header-img {
   width: 70%;
-  padding-top: 20px; }
+  padding-top: 20px;
+  margin-left: 5px; }
 
 .logo-socials--header-socials {
-  width: 30%;
+  width: 20%;
   padding-top: 30px; }
+
+.logo-socials--header-socials a {
+  vertical-align: top; }
+
+.ai-orcid {
+  font-size: 25px; }
+
+.ai-google-scholar {
+  font-size: 21px;
+  padding-top: 2px; }
+
+.logo-socials--header-socials .fa-twitter {
+  font-size: 20px;
+  padding-top: 2.5px; }
+
+.logo-socials--header-socials .fa-envelope {
+  font-size: 19px;
+  padding-top: 3px; }
 
 @media (max-width: 1332px) {
   .logo-socials--header-socials {
@@ -398,9 +417,10 @@ section {
   margin-top: 30px; }
 
 .education--levels {
-  font-weight: 700;
-  font-size: 22px;
-  font-size: 2.2rem; }
+  font-weight: bolder;
+  font-size: 23px;
+  font-size: 2.3rem;
+  font-family: "Nunito Sans", sans-serif; }
 
 .education--text {
   display: -webkit-box;
@@ -435,7 +455,7 @@ section {
     padding: 0; }
 
 .education--text-indv--Ottawa {
-  padding-left: 87px; }
+  padding-left: 88px; }
   .education--text-indv--Ottawa .education--text-details {
     padding-left: 10px; }
 
@@ -475,6 +495,17 @@ section {
 .publications--buttons-2nd {
   margin-left: 10px; }
 
+.contact--socials {
+  width: 720px;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
 footer {
   padding: 1px;
   display: -webkit-box;
@@ -492,4 +523,4 @@ footer a {
   -webkit-transition: 0.4s;
   transition: 0.4s; }
   footer a:hover {
-    color: #288bce; }
+    color: #f19032; }

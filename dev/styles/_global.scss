@@ -6,7 +6,7 @@ $secondary-text: 'Open Sans', sans-serif;
 $white: rgb(254, 255, 253);
 $black: rgb(52,64,85);
 $light-grey: rgb(245, 246, 247);
-$accent: rgb(40,139,206);
+$accent: rgb(241, 144, 50);
 
 // mixins
 
@@ -125,6 +125,7 @@ section {
 }
 
 // buttons
+
 .button-global {
     display: inline-block;
     border: 3px solid $black;
@@ -134,8 +135,8 @@ section {
     &:hover {
         margin-top: 13px;
         border: none;
-        border-right: 3px solid transparent;
         border-left: 3px solid $accent;
+        border-right: 3px solid transparent;
         color: $accent;
     }
     &:active {

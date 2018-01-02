@@ -37,12 +37,42 @@
 .logo-socials--header-img {
     width: 70%;
     padding-top: 20px;
+    margin-left: 5px;
 }
 
 .logo-socials--header-socials {
-    width: 30%;
+    width: 20%;
     padding-top: 30px;
 }
+
+.logo-socials--header-socials {
+    a {
+        vertical-align: top;
+    }
+}
+
+.ai-orcid {
+    font-size: 25px;
+}
+
+.ai-google-scholar {
+    font-size: 21px;
+    padding-top: 2px;
+}
+
+.logo-socials--header-socials {
+    .fa-twitter {
+    font-size: 20px;
+    padding-top: 2.5px;
+}
+    .fa-envelope {
+        font-size: 19px;
+        padding-top: 3px;
+    }
+}
+
+
+
 
 @media (max-width: 1332px) {
     .logo-socials--header-socials {
