@@ -506,6 +506,35 @@ section {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
+.contact--socials-indv-circles {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  background: #344055; }
+  .contact--socials-indv-circles i {
+    color: #fefffd; }
+  .contact--socials-indv-circles .fa, .contact--socials-indv-circles .ai {
+    padding: 20px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .contact--socials-indv-circles .fa {
+    font-size: 30px; }
+  .contact--socials-indv-circles .ai {
+    font-size: 36px; }
+
+.contact--socials-indv p {
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.contact--socials-indv--hover i, .contact--socials-indv--hover p {
+  color: #f19032; }
+
+.contact--socials-indv--hover .contact--socials-indv-circles {
+  background: #fefffd; }
+
 footer {
   padding: 1px;
   display: -webkit-box;

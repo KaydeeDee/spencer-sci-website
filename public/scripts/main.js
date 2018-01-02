@@ -40,4 +40,10 @@ $(function () {
         $(".inner-circle--nav").removeClass("active-square--nav");
         $(".addSix").addClass("active-square--nav");
     }), { offset: 100 };
+
+    $('.contact--socials-indv ').hover(function () {
+        $(this).addClass("contact--socials-indv--hover");
+    }, function () {
+        $(this).removeClass("contact--socials-indv--hover");
+    });
 });

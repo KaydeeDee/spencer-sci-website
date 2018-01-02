@@ -4,7 +4,41 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    // a {
-    //     font-size: 30px;
-    // }
+}
+
+.contact--socials-indv-circles {
+    transition: 0.3s;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    background: $black;
+    i {
+        color: $white;
+    }
+    .fa, .ai {
+        padding: 20px;
+        transition: 0.3s;
+    }
+    .fa {
+        font-size: 30px;
+    }
+    .ai {
+        font-size: 36px;
+    }
+}
+
+.contact--socials-indv {
+    p {
+        text-align: center;
+        transition: 0.3s;
+    }
+}
+
+.contact--socials-indv--hover {
+    i, p {
+    color: $accent;
+    }
+    .contact--socials-indv-circles {
+    background: $white;
+    }
 }
