@@ -1,6 +1,6 @@
 .education--levels {
     font-weight: bolder;
-    @include font-size-value(23);
+    @include font-size-value(25);
     font-family: $main-text;
 }
 
@@ -27,8 +27,8 @@
 }
 
 .education--text-indv--Ottawa {
-    padding-left: 88px;
+    padding-left: 90px;
     .education--text-details {
-        padding-left: 10px;
+        padding-left: 1.5px;
     }
 }

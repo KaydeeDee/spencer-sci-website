@@ -207,8 +207,8 @@ section {
           align-items: center;
   text-transform: uppercase;
   letter-spacing: 1.3px;
-  font-size: 20px;
-  font-size: 2rem;
+  font-size: 22px;
+  font-size: 2.2rem;
   margin-bottom: 20px; }
   .all-sections--sub-headings h2 {
     margin-bottom: 8px; }
@@ -418,8 +418,8 @@ section {
 
 .education--levels {
   font-weight: bolder;
-  font-size: 23px;
-  font-size: 2.3rem;
+  font-size: 25px;
+  font-size: 2.5rem;
   font-family: "Nunito Sans", sans-serif; }
 
 .education--text {
@@ -455,9 +455,9 @@ section {
     padding: 0; }
 
 .education--text-indv--Ottawa {
-  padding-left: 88px; }
+  padding-left: 90px; }
   .education--text-indv--Ottawa .education--text-details {
-    padding-left: 10px; }
+    padding-left: 1.5px; }
 
 .publication--section-left, .publication--section-right {
   display: -webkit-box;
@@ -497,7 +497,8 @@ section {
 
 .contact--socials {
   width: 720px;
-  margin: 10px auto;
+  margin: 0 auto;
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,9 +510,8 @@ section {
 .contact--socials-indv-circles {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  border-radius: 50%;
-  height: 70px;
-  width: 70px;
+  height: 80px;
+  width: 80px;
   background: #344055; }
   .contact--socials-indv-circles i {
     color: #fefffd; }
@@ -520,9 +520,9 @@ section {
     -webkit-transition: 0.3s;
     transition: 0.3s; }
   .contact--socials-indv-circles .fa {
-    font-size: 30px; }
+    font-size: 35px; }
   .contact--socials-indv-circles .ai {
-    font-size: 36px; }
+    font-size: 40px; }
 
 .contact--socials-indv p {
   text-align: center;
@@ -533,7 +533,7 @@ section {
   color: #f19032; }
 
 .contact--socials-indv--hover .contact--socials-indv-circles {
-  background: #fefffd; }
+  background: transparent; }
 
 footer {
   padding: 1px;
