@@ -59,14 +59,18 @@ a {
     text-decoration: none;
 }
 
-h1, h2, p, a {
+h1, h2, h3, p, a {
     color: $black;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: $main-text;
     margin-bottom: 10px;
     margin-top: 0;
+}
+
+h3 {
+    @include font-size-value(19);
 }
 
 p, a {
@@ -88,6 +92,9 @@ section {
 
 .section--text {
     padding: 0 30px;
+    span {
+        font-style: italic;
+    }
 }
 
 // headings
@@ -125,21 +132,40 @@ section {
     text-transform: uppercase;
     margin-top: 10px;
     &:hover {
-        margin-top: 3px;
+        margin-top: 13px;
         border: none;
+        border-right: 3px solid transparent;
         border-left: 3px solid $accent;
         color: $accent;
     }
     &:active {
-        margin-top: 3px;
+        margin-top: 13px;
         border: none;
+        border-left: 3px solid transparent;
         border-right: 3px solid $accent;
         color: $accent;
     }
     &:focus {
-        margin-top: 3px;
+        margin-top: 13px;
         border: none;
         border-right: 3px solid $accent;
+        border-left: 3px solid transparent;
+        color: $accent;
+    }
+}
+
+// links in text
+.anchor-in-text--global {
+    border-bottom: 1.5px solid $accent;
+    padding: 1px;
+    transition: 0.2s;
+    &:hover {
+        color: $accent;
+    }
+    &:active {
+        color: $accent;
+    }
+    &:focus {
         color: $accent;
     }
 }

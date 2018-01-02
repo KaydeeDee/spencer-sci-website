@@ -11,14 +11,23 @@
 
 .education--text-indv {
     display: flex;
+    max-width: 460px;
 }
 
 .education--text-details {
     display: flex;
     flex-direction: column;
     margin-left: 40px;
+    margin-top: 10px;
     p {
         margin: 0;
         padding: 0;
+    }
+}
+
+.education--text-indv--Ottawa {
+    padding-left: 87px;
+    .education--text-details {
+        padding-left: 10px;
     }
 }

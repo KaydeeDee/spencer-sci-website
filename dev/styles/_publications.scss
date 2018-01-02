@@ -1,6 +1,8 @@
 .publication--section-left, .publication--section-right  {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 20px;
+    min-height: 228px;
 }
 
 .publication--section-left {
@@ -9,15 +11,15 @@
 
 .publication--section-right {
     flex-wrap: wrap-reverse;
+    text-align: right;
 }
 
 .publication--section--img {
     flex-shrink: 0; 
-    max-width: 200px;
 }
 
 .publication--section-left--text, .publication--section-right--text {
-    max-width: 600px;
+    width: 67%;
     min-height: 150px;
     margin-top: 20px;
 }
@@ -28,4 +30,10 @@
 
 .publication--section-left--text {
     margin-left: 20px;
+}
+
+// buttons
+
+.publications--buttons-2nd {
+    margin-left: 10px;
 }
