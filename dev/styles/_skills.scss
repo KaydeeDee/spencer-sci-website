@@ -1,0 +1,14 @@
+.skills--flex-total {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skills--indv-section {
+    max-width: 40%;
+    text-align: center;
+    margin: 15px 0px;
+    h3 {
+        text-transform: uppercase;
+    }
+}

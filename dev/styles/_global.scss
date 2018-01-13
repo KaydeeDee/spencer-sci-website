@@ -17,17 +17,19 @@ $accent: rgb(241, 144, 50);
 
 // wrappers
 .wrapper--max {
-    max-width: 2500px;
+    max-width: 1750px;
     margin: 0 auto;
 }
 
+.wrapper--inner, .wrapper--inner-no-margin {
+    max-width: 70%;
+}
+
 .wrapper--inner {
-    max-width: 1250px;
     margin: 60px auto;
 }
 
 .wrapper--inner-no-margin {
-    max-width: 1250px;
     margin: 0 auto;
 }
 
@@ -59,7 +61,7 @@ a {
     text-decoration: none;
 }
 
-h1, h2, h3, p, a {
+h1, h2, h3, p, a, button {
     color: $black;
 }
 
@@ -132,12 +134,13 @@ section {
     padding: 11px 15px;
     text-transform: uppercase;
     margin-top: 10px;
+    transition: 0.3s;
     &:hover {
-        margin-top: 13px;
-        border: none;
-        border-left: 3px solid $accent;
-        border-right: 3px solid transparent;
-        color: $accent;
+        // margin-top: 13px;
+        // border: none;
+        // border-left: 3px solid $accent;
+        // border-right: 3px solid transparent;
+        border: 3px solid $accent;
     }
     &:active {
         margin-top: 13px;
@@ -172,38 +175,14 @@ section {
 }
 
 // media queries
-@media (max-width: 1795px) { 
-    .wrapper--inner {
-    max-width: 1000px;
-    margin: 60px auto;
-    }
-
-    .wrapper--inner-no-margin {
-        max-width: 1000px;
-        margin: 0 auto;
+@media (max-width: 1380px) { 
+    .wrapper--inner,  .wrapper--inner-no-margin {
+    max-width: 65%;
     }
 }
 
-@media (max-width: 1529px) { 
-    .wrapper--inner {
-    max-width: 945px;
-    margin: 60px auto;
-    }
-
-    .wrapper--inner-no-margin {
-        max-width: 945px;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 1332px) { 
-    .wrapper--inner {
-    max-width: 90%;
-    margin: 60px auto;
-    }
-
-    .wrapper--inner-no-margin {
-        max-width: 90%;
-        margin: 0 auto;
+@media (max-width: 1175px) { 
+    .wrapper--inner,  .wrapper--inner-no-margin {
+    max-width: 75%;
     }
 }
