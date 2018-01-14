@@ -14,7 +14,7 @@ $(function () {
     $('.about-me--nav').waypoint(function () {
         $(".inner-circle--nav").removeClass("active-square--nav");
         $(".addOne").addClass("active-square--nav");
-    }), { offset: 100 };
+    }), { offset: 50 };
 
     $('.research-section--nav').waypoint(function () {
         $(".inner-circle--nav").removeClass("active-square--nav");

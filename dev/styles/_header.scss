@@ -2,7 +2,7 @@
     text-align: center;
     margin-top: 4.5vh;
     background: rgba($light-grey,0.7);
-    padding: 15vh 0;
+    padding: 15vh 15px;
     h1 {
         @include font-size-value(55);
         margin-bottom: 0;

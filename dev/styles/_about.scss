@@ -11,4 +11,11 @@
 .about-me--text {
     width: 60%;
     padding-left: 25px;
+    padding-top: 18px;
+}
+
+@media (max-width: 1552px) {
+    .about-me--text {
+        padding-top: 8px;
+    }
 }

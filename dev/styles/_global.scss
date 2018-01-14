@@ -41,7 +41,7 @@ html {
 
 // general
 
-main {
+body {
     background: linear-gradient(rgba($white, 0.2), rgba($white, 0.2)), url(assets/topo.png);
     padding: 1px;
     background-attachment: fixed;
@@ -135,27 +135,27 @@ section {
     text-transform: uppercase;
     margin-top: 10px;
     transition: 0.3s;
-    &:hover {
+    &:hover, &:active, &:focus {
         // margin-top: 13px;
         // border: none;
         // border-left: 3px solid $accent;
         // border-right: 3px solid transparent;
         border: 3px solid $accent;
     }
-    &:active {
-        margin-top: 13px;
-        border: none;
-        border-left: 3px solid transparent;
-        border-right: 3px solid $accent;
-        color: $accent;
-    }
-    &:focus {
-        margin-top: 13px;
-        border: none;
-        border-right: 3px solid $accent;
-        border-left: 3px solid transparent;
-        color: $accent;
-    }
+    // &:active, &:focus {
+    //     margin-top: 13px;
+    //     border: none;
+    //     border-left: 3px solid transparent;
+    //     border-right: 3px solid $accent;
+    //     color: $accent;
+    // }
+    // &:focus {
+    //     margin-top: 13px;
+    //     border: none;
+    //     border-right: 3px solid $accent;
+    //     border-left: 3px solid transparent;
+    //     color: $accent;
+    // }
 }
 
 // links in text
@@ -163,13 +163,7 @@ section {
     border-bottom: 1.5px solid $accent;
     padding: 1px;
     transition: 0.2s;
-    &:hover {
-        color: $accent;
-    }
-    &:active {
-        color: $accent;
-    }
-    &:focus {
+    &:hover, &:active, &:focus {
         color: $accent;
     }
 }
