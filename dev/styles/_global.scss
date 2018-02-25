@@ -4,9 +4,16 @@ $main-text: 'Nunito Sans', sans-serif;
 $secondary-text: 'Open Sans', sans-serif;
 
 $white: rgb(254, 255, 253);
-$black: rgb(52,64,85);
-$light-grey: rgb(245, 246, 247);
+// $white: #f4f4f4;
+// $black: rgb(52,64,85);
+$black: rgb(55, 55, 55);
+$light-grey: rgb(249, 249, 249);
+// $light-grey: #a3a5a7;
+
 $accent: rgb(241, 144, 50);
+// $accent: #C0B283;
+
+
 
 // mixins
 
@@ -22,7 +29,7 @@ $accent: rgb(241, 144, 50);
 }
 
 .wrapper--inner, .wrapper--inner-no-margin {
-    max-width: 70%;
+    max-width: 72%;
 }
 
 .wrapper--inner {
@@ -42,7 +49,8 @@ html {
 // general
 
 body {
-    background: linear-gradient(rgba($white, 0.2), rgba($white, 0.2)), url(assets/topo.png);
+    // background: linear-gradient(rgba($white, 0.4), rgba($white,0.4)), url(assets/topo.png);
+    background: $white;
     padding: 1px;
     background-attachment: fixed;
 }
@@ -77,7 +85,7 @@ h3 {
 
 p, a {
     font-family: $secondary-text;
-    @include font-size-value(16);
+    @include font-size-value(16.5);
 }
 
 p {
@@ -90,6 +98,7 @@ section {
 
 .section--specifics  {
     background: $light-grey;
+    // box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .section--text {
@@ -105,42 +114,49 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-transform: uppercase;
-    letter-spacing: 1.3px;
-    @include font-size-value(22);
+    text-transform: capitalize;
     margin-bottom: 20px;
+    @include font-size-value(25);
     h2 {
         margin-bottom: 8px;
+        letter-spacing: 0.8px;
+    }
+    span {
+        @include font-size-value(45);
     }
 }
 
 // lines under sub headings
-.sub-headings--lines {
-    width: 300px;
-}
+// .sub-headings--lines {
+//     width: 300px;
+// }
 
-.sub-headings--shorter-line {
-    margin: 0 auto;
-    width: 35%;
-    height: 3px;
-    background: $black;
-}
+// .sub-headings--shorter-line {
+//     margin: 0 auto;
+//     width: 35%;
+//     height: 3px;
+//     background: $black;
+// }
 
 // buttons
 
 .button-global {
     display: inline-block;
-    border: 3px solid $black;
+    line-height: 42px;
+    height: 40px;
     padding: 11px 15px;
     text-transform: uppercase;
+    cursor: pointer;
     margin-top: 10px;
-    transition: 0.3s;
-    &:hover, &:active, &:focus {
+    transition: all 0.3s ease;
+    position: relative;
+    
+    // &:hover, &:active, &:focus {
         // margin-top: 13px;
         // border: none;
         // border-left: 3px solid $accent;
         // border-right: 3px solid transparent;
-        border: 3px solid $accent;
+        // border: 3px solid $accent;
     }
     // &:active, &:focus {
     //     margin-top: 13px;
@@ -156,7 +172,25 @@ section {
     //     border-left: 3px solid transparent;
     //     color: $accent;
     // }
+// }
+.button-global:before, .button-global:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: $black;
+  transition: all 0.3s ease;
 }
+.button-global:before {
+  height: 0%;
+  width: 3px;
+}
+.button-global:after {
+  width: 0%;
+  height: 3px;
+}
+.button-global:hover:before {height: 100%;}
+.button-global:hover:after {width: 100%;}
 
 // links in text
 .anchor-in-text--global {

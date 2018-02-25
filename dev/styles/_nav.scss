@@ -1,20 +1,20 @@
 .nav--flex {
     display: flex;
     flex-direction: column;
-    right: 50px;
-    top: 140px;
+    left: 32px;
+    top: 180px;
     text-align: right;
     position: fixed;
     a {
         color: $black;
         line-height: 35px;
-        @include font-size-value(18);
+        @include font-size-value(17.5);
         text-transform: uppercase;
         letter-spacing: 0.7px;
         transition: 0.3s;
         &:hover, &:active, &:focus {
             color: $accent;
-        }
+            }
         }
     }
 

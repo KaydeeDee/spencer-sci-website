@@ -1,15 +1,17 @@
 .centering-text--header {
     text-align: center;
-    margin-top: 4.5vh;
-    background: rgba($light-grey,0.7);
-    padding: 15vh 15px;
+    margin-top: 2vh;
+    background: $light-grey;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     h1 {
-        @include font-size-value(55);
+        @include font-size-value(52);
         margin-bottom: 0;
         letter-spacing: 2px;
     }
     h2 {
-        text-transform: uppercase;
         @include font-size-value(30);
         margin-top: 10px;
         letter-spacing: 1.5px;

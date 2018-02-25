@@ -5,10 +5,21 @@
 }
 
 .skills--indv-section {
-    max-width: 40%;
-    text-align: center;
-    margin: 15px 0px;
+    max-width: 395px;
+    margin: 10px 5px;
+    display: flex;
+    flex: 0 1 auto;
     h3 {
         text-transform: uppercase;
+    }
+    .skills--indv-section-icons {
+        margin-right: 8px;
+        width: 120px;
+        flex-shrink: 0;
+    }
+    .skills--indv-section-words {
+        p {
+            margin: 0;
+        }
     }
 }
