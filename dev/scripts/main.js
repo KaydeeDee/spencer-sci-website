@@ -1,7 +1,8 @@
-$(function () {
+let spencer = {};
 
+spencer.functionality = () => {
     // Smooth scroll
-    $('a').smoothScroll({
+    $('nav a').smoothScroll({
         speed: 1350
     });
 
@@ -39,15 +40,26 @@ $(function () {
         $(".addSix").addClass("active-square--nav")
     }), { offset: 100 };
 
-    // skills hover pop up
-    
-    // $('.skills--icons-indv--mapping').on('click', function () {
-    //     $(".skills--icons-indv--mapping-text").slideToggle("slow");
-    //     $(".skills--icons-indv--mapping").mouseleave ( function () {
-    //         $(".skills--icons-indv--mapping-text").slideUp("slow");
-    //     })
-    
-    // });
+    // hamberger menu
+
+    function screenSize() {
+        if (window.matchMedia('(max-width: 1000px)').matches) {
+            $('.nav--flex').addClass('nav--mobile').removeClass('nav--flex');
+            $('nav ul').addClass('nav--mobile-list');
+        }
+        else {
+            $('.nav--mobile').addClass('nav--flex').removeClass('nav--mobile');
+        }
+    };
+
+    window.addEventListener('resize', screenSize, false);
+    screenSize();
+
+    $('.nav--mobile').click(function () {
+        $(this).toggleClass('open');
+        $('nav ul').toggleClass('nav--mobile-list');
+        $('nav').toggleClass('nav--mobile--background');
+    });
 
 
     // hover state in contact
@@ -59,4 +71,15 @@ $(function () {
         }
     );
 
+
+};
+
+// init    
+spencer.init = () => {
+    spencer.functionality();
+};
+
+// the goods 
+$(function () {
+    spencer.init();
 });

@@ -18,33 +18,135 @@
         }
     }
 
-.nav--mobile {
-    display: none;
+.nav--mobile--background {
+    position: fixed;
+    background: rgba($white, 0.9);
+    width: 100%;
+    right: 0;
+    height: 100%;
+    transition: 0.5s ease;
 }
 
-    .inner-circle--nav {
-        background: transparent;
-        height: 8px;
-        width: 8px;
-        display: inline-block;
-    }
+.nav--mobile {
+    right: 200px;
+    top: 5px;
+    text-align: right;
+    position: fixed;
+        .nav--mobile-list{
+            display: none;
+        }
+        .menu--mobile-button {
+            transition-duration: 0.5s;
+            top: 2px;
+            border-radius: 100%;
+        }
+        .icon-circle {
+            transition-duration: 0.5s;
+            position: absolute;
+            height: 60px;
+            width: 60px;
+            top: 30px;
+            background-color: $white;
+            background: transparent;
+            border: 4px solid $black;
+        }
+        .icon {
+            border-radius: 4px;
+            background-color: $black;
+            position: absolute;
+            transition-duration: 0.5s;
+            top: 30px;
+            height: 4px;
+            width: 30px;
 
-    .active-square--nav {
-        height: 8px;
-        width: 8px;
-        display: inline-block;
-        background: $accent;
-        position: relative;
-        top: -2px;
-    }
+                &:before {
+                border-radius: 4px;
+                transition-duration: 0.5s;
+                position: absolute;
+                content: "";
+                height: 4px;
+                width: 30px;
+                top: -10px;
+                background-color: $black;
+                }
+            
+                &:after {
+                    border-radius: 4px;
+                    transition-duration: 0.5s;
+                    position: absolute;
+                    content: "";
+                    height: 4px;
+                    width: 30px;
+                    top: 10px;
+                    background-color: $black;
+                }
+        }
+            &.open {
+                ul {
+                    position: fixed;
+                    top: 30%;
+                    left: 35%;
+                    a {
+                        color: $black;
+                        @include font-size-value(22);
+                        text-transform: uppercase;
+                        letter-spacing: 0.7px;
+                        transition: 0.3s;
+                        &:hover, &:active, &:focus {
+                            color: $accent;
+                            }
+                    }
+                    li {
+                        margin: 15px 0;
+                    }
+                }
+                .icon-circle {
+                background: #fff;
+                }
+                .icon {
+                transition-duration: 0.5s;
+                background: transparent;
+                
+                    &:before{
+                        transform: rotateZ(45deg) scaleX(1.25) translate(6.5px, 6.5px);
+                    }
+
+                    &:after{
+                        transform: rotateZ(-45deg) scaleX(1.25) translate(6px, -6px);
+                    }
+                }
+            }
+            &:hover {
+                cursor: pointer;
+            }
+
+}
+
+
+
+.inner-circle--nav {
+    background: transparent;
+    height: 8px;
+    width: 8px;
+    display: inline-block;
+}
+
+.active-square--nav {
+    height: 8px;
+    width: 8px;
+    display: inline-block;
+    background: $accent;
+    position: relative;
+    top: -2px;
+}
 
     // media queries
 
-@media (max-width: 1175px) { 
-    .nav--flex{
-    display: none;
-    }
-    .nav--mobile {
-        display: block;
-    }
-}
+// @media (max-width: 1000px) { 
+//     .nav--flex{
+//     display: none;
+//     }
+//     .nav--mobile {
+//         display: block;
+//     }
+// }

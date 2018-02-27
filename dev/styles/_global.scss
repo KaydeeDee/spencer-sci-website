@@ -4,12 +4,8 @@ $main-text: 'Nunito Sans', sans-serif;
 $secondary-text: 'Open Sans', sans-serif;
 
 $white: rgb(254, 255, 253);
-// $white: #f4f4f4;
-// $black: rgb(52,64,85);
 $black: rgb(55, 55, 55);
-// $light-grey: darken(rgb(249, 249, 249), 1);
 $light-grey: lighten(rgb(200, 190, 180), 18);
-
 $accent: rgb(241, 144, 50);
 
 
@@ -224,8 +220,8 @@ section {
     }
 }
 
-@media (max-width: 1175px) { 
-    .wrapper--inner,  .wrapper--inner-no-margin {
-    max-width: 75%;
-    }
-}
+// @media (max-width: 1175px) { 
+//     .wrapper--inner,  .wrapper--inner-no-margin {
+//     max-width: 50%;
+//     }
+// }
