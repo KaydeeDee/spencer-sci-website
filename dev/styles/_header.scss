@@ -10,20 +10,20 @@
     
     background: $light-grey;
     // max-width: 1016px;
-    height: 78vh;
-    margin-top: 3.5vh;
+    height: 80vh;
+    margin-top: 4vh;
     overflow: hidden;
 .centering-text--header {
     display: flex;
     flex-direction: column;
-    padding-top: 18vh;
-    padding-left: 85px;
-    background-image: url(../../public/styles/assets/sawfly-header.png);
-    width:1300px;
-    height: 900px;
-    background-position: 18vw 20vh;
+    padding-top: 16vh;
+    padding-left: 58px;
+    background-image: url(../../public/styles/assets/sawfly.png);
+    width:1000px;
+    height: 700px;
+    background-position: 18vw 21vh;
     background-repeat: no-repeat;
-    background-size: 740px 420px;
+    background-size: 700px 400px;
     flex-wrap: wrap;
     margin-right: 0;
 

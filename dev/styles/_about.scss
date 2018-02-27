@@ -1,21 +1,22 @@
 .about-me--text-image-flex {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
 }
 
 .about-me--image {
     flex-shrink: 0;
+    padding-right: 5px;
 }
 
 .about-me--text {
     width: 60%;
-    padding-left: 25px;
-    padding-top: 18px;
+    padding-left: 10px;
+    margin-top: .8%;
 }
 
-@media (max-width: 1552px) {
-    .about-me--text {
-        padding-top: 8px;
-    }
-}
+// @media (max-width: 1552px) {
+//     .about-me--text {
+//         padding-top: 8px;
+//     }
+// }

@@ -12,6 +12,8 @@
 .publication--section-right {
     flex-wrap: wrap-reverse;
     text-align: right;
+    background: darken($light-grey, 10);
+    padding: 10px;
 }
 
 .publication--section--img {
