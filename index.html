@@ -11,44 +11,61 @@
 	<link rel="stylesheet" href="public/styles/css/academicons.min.css">
 	<link rel="stylesheet" href="public/styles/style.css">
 
+
 	<link type="image/png" href="public/styles/assets/SKM-favicon.png" rel="icon">
 </head>
 	<body class="wrapper--max">
 		<!-- nav starts -->
-		<nav>
-			<div class="nav--flex">
+		<nav class="nav--flex">
+				<div class="hamburger" role=button>
+					<span class="red"></span>
+					<span class="blue"></span>
+					<span class="green"></span>
+				</div>
 				<ul role="navigation">
 					<li>
-						<a href="#toTop">home
-						<div class="addZero inner-circle--nav"></div>
+						<a href="#toTop">
+							home
+							<div class="addZero inactive-square-transparent--nav"></div>
 						</a>
 					</li>
 					<li>
-						<a href="#toAbout">about <div class="addOne inner-circle--nav"></div></a>
+						<a href="#toAbout">
+							about 
+							<div class="addOne inactive-square-transparent--nav"></div>
+						</a>
 					</li>
 					<li>
-						<a href="#toResearch">research <div class="addTwo inner-circle--nav"></div></a>
+						<a href="#toResearch">
+							research 
+							<div class="addTwo inactive-square-transparent--nav"></div>
+						</a>
 					</li>
 					<li>
-						<a href="#toPublications">publications <div class="addThree inner-circle--nav"></div></a>
+						<a href="#toPublications">
+							publications 
+							<div class="addThree inactive-square-transparent--nav"></div>
+						</a>
 					</li>
 					<li>
-						<a href="#toEducation">education <div class="addFour inner-circle--nav"></div></a>
+						<a href="#toEducation">
+							education 
+							<div class="addFour inactive-square-transparent--nav"></div>
+						</a>
 					</li>
 					<li>
-						<a href="#toSkills">skills <div class="addFive inner-circle--nav"></div></a>
+						<a href="#toSkills">
+							skills 
+							<div class="addFive inactive-square-transparent--nav"></div>
+						</a>
 					</li>
 					<li>
-						<a href="#toContact">contact<div class="addSix inner-circle--nav"></div></a>
+						<a href="#toContact">
+							contact
+							<div class="addSix inactive-square-transparent--nav"></div>
+						</a>
 					</li>
 				</ul>
-
-				<div class="menu--mobile-button btn14" data-menu="14">
-					<div class="icon-circle"></div>
-					<div class="icon"></div>
-				</div>
-
-			</div>
 		</nav>
 		<!-- nav ends -->
 		<!-- header starts -->
@@ -58,11 +75,6 @@
 					<div class="logo-socials--header-img">
 						<img src="public/styles/assets/SKM-logo.png" alt="spencer's logo">
 					</div>
-					<!-- <div class="nav--mobile">
-						<div>
-							AHH
-						</div>
-					</div> -->
 					<div class="logo-socials--header-socials">
 						<ul class="socials--header-footer">
 							<li><a href="https://twitter.com/skmonckton" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -75,8 +87,9 @@
 				<div class="top-box--header">
 					<div class="centering-text--header">
 						<h1>Spencer K. Monckton</h1>
-						<h2>Entomologist &<br> Systematist</h2>
+						<h2>Entomologist & Systematist</h2>
 					</div>
+					<img src="public/styles/assets/sawfly.png" alt="Photo of sawfly from the side"></div>
 				</div>
 			</header>
 			<!-- header ends -->
@@ -84,10 +97,6 @@
 			<section class="section--specifics wrapper--inner about-me--nav" id="toAbout">
 				<div class="all-sections--sub-headings">
 					<h2>about<span>.</span></h2>
-					<!-- <div class="sub-headings--lines">
-						<div class="sub-headings--shorter-line">
-						</div>
-					</div> -->
 				</div>
 				<div class="about-me--text-image-flex section--text">
 					<div class="about-me--image">
@@ -99,7 +108,7 @@
 						biogeography. Hymenoptera are my specialty. I'm also a quick & resourceful learner, an enthusiastic problem-solver, and I
 						have a knack for communicating knowledge in a clear, accessible, and engaging fashion.
 						</p>
-						<button class="button-global"><a href="#"><span>View My CV</span></a></button>
+						<a href="#" class="button-global">View My CV</a>
 					</div>
 				</div>
 			</section>
@@ -107,9 +116,6 @@
 			<section class="section--specifics wrapper--inner research-section--nav" id="toResearch">
 				<div class="all-sections--sub-headings">
 					<h2>research<span>.</span></h2>
-					<!-- <div class="sub-headings--lines">
-						<div class="sub-headings--shorter-line"></div>
-					</div> -->
 				</div>
 				<div class="section--text">
 					<h3>Diversity and phylogeography of the sawfly genus <span>Pristiphora</span> in the Nearctic region </h3>
@@ -129,9 +135,6 @@
 			<section class="section--specifics wrapper--inner publications-section--nav" id="toPublications">
 				<div class="all-sections--sub-headings">
 					<h2>publications<span>.</span></h2>
-					<!-- <div class="sub-headings--lines">
-						<div class="sub-headings--shorter-line"></div>
-					</div> -->
 				</div>
 				<div class="section--text">
 					<div class="publication--section-left">
@@ -142,16 +145,16 @@
 							<p>Packer, L., Monckton, S.K., Onuferko, T.M., Ferrari R.R. (in press). Validating Taxonomic Identifications in Entomological Research. doi:10.1111/icad.12284
 							</p>
 							<div class="publications--buttons">
-								<button class="button-global">
-									<a href="" >
-										<span>View Online</span>
+								
+									<a href="" class="button-global">
+										View Online
 									</a>
-								</button>
-								<button class="button-global publications--buttons-2nd">
-									<a href="">
-										<span>Download PDF</span>
+								
+							
+									<a href="" class="button-global publications--buttons-2nd">
+										Download PDF
 									</a>
-								</button>
+								
 							</div>
 						</div>
 					</div>
@@ -162,16 +165,16 @@
 							Monckton, S.K. 2016. A revision of <span>Chilicola </span>(<span>Heteroediscelis</span>), a subgenus of xeromelissine bees (Hymenoptera, Colletidae) endemic to Chile: taxonomy, phylogeny, and biogeography, with descriptions of eight new species. ZooKeys, 591: 1-144. doi:10.3897/zookeys.591.7731
 							</p>
 							<div class="publications--buttons">
-								<button class="button-global">
-									<a href="">
-										<span>View Online</span>
+								
+									<a href="" class="button-global">
+										View Online
 									</a>
-								</button>
-								<button class="button-global publications--buttons-2nd">
-									<a href="">
-										<span>Download PDF</span>
+								
+								
+									<a href="" class="button-global publications--buttons-2nd">
+										Download PDF
 									</a>
-								</button>
+								
 							</div>
 						</div>
 						<div class="publication--section--img">
@@ -186,16 +189,15 @@
 							<p>Monckton, S.K. 2014. Case 3670 - <span>Chilicola vicugna</span> Toro & Moldenke, 1979 (Insecta, Hymenoptera, COLLETIDAE): proposed replacement of the holotype by a neotype. Bulletin of Zoological Nomenclature, 71(4): 234-236. doi:10.21805/bzn.v71i4.a13
 							</p>
 							<div class="publications--buttons">
-								<button class="button-global">
-									<a href="">
-										<span>View Online</span>
+								
+									<a href="" class="button-global">
+										View Online
 									</a>
-								</button>
-								<button class="button-global publications--buttons-2nd">
-									<a href="">
-										<span>Download PDF</span>
+								
+									<a href="" class="button-global publications--buttons-2nd">
+										Download PDF
 									</a>
-								</button>
+							
 							</div>
 						</div>
 					</div>
@@ -206,16 +208,16 @@
 							Valenta, K., Miller, C.N., Monckton, S.K., Melin, A.D., Lehman, S.M., Styler, S.A., Chapman, C.A., Lawes, M.J. 2016. Fruit ripening signals and cues in a Madagascan dry forest: haptic indicators reliably indicate fruit ripeness to dichromatic lemurs. Evolutionary Biology. doi:10.1007/s11692-016-9374-7
 							</p>
 							<div class="publications--buttons">
-								<button class="button-global">
-									<a href="">
-										<span>View Online</span>
+							
+									<a href="" class="button-global">
+										View Online
 									</a>
-								</button>
-								<button class="button-global publications--buttons-2nd">
-									<a href="">
-										<span>Download PDF</span>
+								
+								
+									<a href="" class="button-global publications--buttons-2nd">
+										Download PDF
 									</a>
-								</button>
+								
 							</div>
 						</div>
 						<div class="publication--section--img">
@@ -232,16 +234,16 @@
 							Valenta, K., Brown, K.A., Melin, A.D., Monckton, S.K., Styler, S.A. Jackson, D.A., Chapman, C.A. 2015. It’s not easy being blue: a cost analysis of plant signal trade-offs. PLoS ONE, 10(6): e0131725. doi:10.1371/journal.pone.0131725
 							</p>
 							<div class="publications--buttons">
-								<button class="button-global">
-									<a href="">
-										<span>View Online</span>
+								
+									<a href="" class="button-global">
+										View Online
 									</a>
-								</button>
-								<button class="button-global publications--buttons-2nd">
-									<a href="">
-										<span>Download PDF</span>
+								
+								
+									<a href="" class="button-global publications--buttons-2nd">
+										Download PDF
 									</a>
-								</button>
+								
 							</div>
 						</div>
 					</div>

@@ -17,6 +17,13 @@ $accent: rgb(241, 144, 50);
     font-size: ($sizeValue/10) * 1rem;
 }
 
+
+// base size
+
+html {
+    font-size: 62.5%;
+}
+
 // wrappers
 .wrapper--max {
     max-width: 1750px;
@@ -24,7 +31,7 @@ $accent: rgb(241, 144, 50);
 }
 
 .wrapper--inner, .wrapper--inner-no-margin {
-    max-width: 72%;
+    max-width: 75%;
 }
 
 .wrapper--inner {
@@ -35,18 +42,11 @@ $accent: rgb(241, 144, 50);
     margin: 0 auto;
 }
 
-// base size
-
-html {
-    font-size: 62.5%;
-}
-
 // general
 
 body {
     background: $white;
     padding: 1px;
-    background-attachment: fixed;
 }
 
 ul {
@@ -69,17 +69,16 @@ h1, h2, h3, p, a, button {
 
 h1, h2, h3 {
     font-family: $main-text;
-    margin-bottom: 10px;
     margin-top: 0;
 }
 
 h3 {
-    @include font-size-value(19);
+    @include font-size-value(16.5);
 }
 
 p, a {
     font-family: $secondary-text;
-    @include font-size-value(16.5);
+    @include font-size-value(15);
 }
 
 p {
@@ -92,7 +91,6 @@ section {
 
 .section--specifics  {
     background: $light-grey;
-    // box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .section--text {
@@ -105,102 +103,28 @@ section {
 // headings
 
 .all-sections--sub-headings {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     text-transform: capitalize;
     margin-bottom: 20px;
-    @include font-size-value(26);
     h2 {
-        margin-bottom: 8px;
         letter-spacing: 0.8px;
         line-height: 40px;
+        @include font-size-value(26);
     }
     span {
-        @include font-size-value(47);
+        @include font-size-value(35);
     }
 }
-
-// lines under sub headings
-// .sub-headings--lines {
-//     width: 300px;
-// }
-
-// .sub-headings--shorter-line {
-//     margin: 0 auto;
-//     width: 35%;
-//     height: 3px;
-//     background: $black;
-// }
 
 // buttons
 
 .button-global {
-    height: 40px;
-    width: 130px;
-    line-height: 42px;
-    padding: 11px 15px;
-    padding: 0;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
+    padding: 8px 8px;
     text-transform: uppercase;
-    position: relative;
     transition: all 0.3s ease;
-    background: transparent;
-        span {
-            font-style: normal;
-            position: relative;
-            display: block;
-            width: 100%;
-            height: 100%;
-        }
-        &:before, &:after {
-            position: absolute;
-            content: "";
-            height: 0%;
-            width: 3px;
-            background: $black;
-        }
-        &:before {
-            right: 0;
-            top: 0;
-            transition: all 0.1s ease;
-        }
-        &:after {
-            left: 0;
-            bottom: 0;
-            transition: all 0.1s 0.2s ease;
-        }
-        &:hover:before {
-            transition: all 0.1s 0.2s ease;
-            height: 100%; 
-        }
-        &:hover:after {
-            transition: all 0.1s ease;
-            height: 100%;
-        }
-        span:before, span:after {
-            position: absolute;
-            content: "";
-            background: $black;
-        }
-        span:before {
-            left: 0;
-            top: 0;
-            width: 0%;
-            height: 3px;
-            transition: all 0.1s 0.1s ease;
-        }
-        span:after {
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 3px;
-        }
-        span:hover:before {
-            width: 100%;
-        }
+    border: 2px solid $black;
+    margin-top: 5px;
+    display: inline-block;
     }
 
 // links in text
@@ -216,12 +140,30 @@ section {
 // media queries
 @media (max-width: 1380px) { 
     .wrapper--inner,  .wrapper--inner-no-margin {
+    max-width: 72%;
+    }
+}
+
+@media (max-width: 1230px) { 
+    .wrapper--inner,  .wrapper--inner-no-margin {
+    max-width: 70%;
+    }
+}
+
+@media (max-width: 1150px) { 
+    .wrapper--inner,  .wrapper--inner-no-margin {
+    max-width: 68%;
+    }
+}
+
+@media (max-width: 1081px) { 
+    .wrapper--inner,  .wrapper--inner-no-margin {
     max-width: 65%;
     }
 }
 
-// @media (max-width: 1175px) { 
-//     .wrapper--inner,  .wrapper--inner-no-margin {
-//     max-width: 50%;
-//     }
-// }
+@media (max-width: 1000px) { 
+    .wrapper--inner,  .wrapper--inner-no-margin {
+    max-width: 88%;
+    }
+}

@@ -1,63 +1,43 @@
 
 .top-box--header {
-
-    // background: linear-gradient(rgba($light-grey,0.3),rgba($light-grey,0.3)),
-    //     url(../../public/styles/assets/sawfly-header.png);
-    // background-position: -20% 0%;
-    // background-repeat: no-repeat;
-    // background-clip: padding-box;
-    // position: relative;
-    
     background: $light-grey;
-    // max-width: 1016px;
-    height: 80vh;
-    margin-top: 4vh;
+    height: 85vh;
+    margin-top: 2.2vh;
     overflow: hidden;
-.centering-text--header {
-    display: flex;
-    flex-direction: column;
-    padding-top: 16vh;
-    padding-left: 58px;
-    background-image: url(../../public/styles/assets/sawfly.png);
-    width:1000px;
-    height: 700px;
-    background-position: 18vw 21vh;
-    background-repeat: no-repeat;
-    background-size: 700px 400px;
-    flex-wrap: wrap;
-    margin-right: 0;
 
-    h1 {
-        @include font-size-value(52);
-        margin-bottom: 0;
-        letter-spacing: 2px;
-       
+    .centering-text--header {
+        display: flex;
+        flex-direction: column;
+        padding-top: 8vh;
+        padding-left: 58px;
+        flex-wrap: wrap;
+
+        h1 {
+            @include font-size-value(45);
+            margin-bottom: 0;
+            letter-spacing: 2px;
+        }
+        h2 {
+            @include font-size-value(28);
+            margin-top: 6px;
+            letter-spacing: 1.5px;
+            width: 250px;
+        }
     }
-    h2 {
-        @include font-size-value(30);
-        margin-top: 6px;
-        letter-spacing: 1.5px;
+        img {
+        position: relative;
+        bottom: 3vh;
+        left: 15vw;
+        width: 720px;
+        transform: rotate(18deg);
     }
-}
-    // .background-image--header {
-    //     width: 700px;
-    //     overflow: hidden;
-    //     img {
-    //     position: absolute;
-    //     // bottom: 8%;
-    //     right: 190px;
-    //     width: 65%;
-    //     transform: rotate(-2deg);
-    //     }
-    
-    // }
+
 
 }
 
 .logo-socials--header {
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
     a {
         transition: 0.3s ease;
         &:hover {
@@ -72,7 +52,7 @@
 }
 
 .logo-socials--header-img {
-    width: 70%;
+    width: 50%;
     padding-top: 20px;
     margin-left: 5px;
 }
@@ -82,29 +62,23 @@
     padding-top: 30px;
 }
 
-.logo-socials--header-socials {
-    a {
-        vertical-align: top;
-    }
-}
-
 .ai-orcid {
-    font-size: 27px;
+    font-size: 24px;
 }
 
 .ai-google-scholar {
-    font-size: 24px;
+    font-size: 21px;
     padding-top: 2px;
 }
 
 .logo-socials--header-socials {
     .fa-twitter {
-    font-size: 23px;
-    padding-top: 2.5px;
-}
+    font-size: 21px;
+    padding-top: 2px;
+    }
     .fa-envelope {
-        font-size: 21px;
-        padding-top: 3px;
+        font-size: 20px;
+        padding-top: 1.5px;
     }
 }
 

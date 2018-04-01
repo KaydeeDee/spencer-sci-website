@@ -13,32 +13,32 @@ spencer.functionality = function () {
     $(".addZero").addClass("active-square--nav");
 
     $('.about-me--nav').waypoint(function () {
-        $(".inner-circle--nav").removeClass("active-square--nav");
+        $(".inactive-square-transparent--nav").removeClass("active-square--nav");
         $(".addOne").addClass("active-square--nav");
     }), { offset: 50 };
 
     $('.research-section--nav').waypoint(function () {
-        $(".inner-circle--nav").removeClass("active-square--nav");
+        $(".inactive-square-transparent--nav").removeClass("active-square--nav");
         $(".addTwo").addClass("active-square--nav");
     }), { offset: 100 };
 
     $('.publications-section--nav').waypoint(function () {
-        $(".inner-circle--nav").removeClass("active-square--nav");
+        $(".inactive-square-transparent--nav").removeClass("active-square--nav");
         $(".addThree").addClass("active-square--nav");
     }), { offset: 100 };
 
     $('.education-section--nav').waypoint(function () {
-        $(".inner-circle--nav").removeClass("active-square--nav");
+        $(".inactive-square-transparent--nav").removeClass("active-square--nav");
         $(".addFour").addClass("active-square--nav");
     }), { offset: 100 };
 
     $('.skills-section--nav').waypoint(function () {
-        $(".inner-circle--nav").removeClass("active-square--nav");
+        $(".inactive-square-transparent--nav").removeClass("active-square--nav");
         $(".addFive").addClass("active-square--nav");
     }), { offset: 100 };
 
     $('.contact-section--nav').waypoint(function () {
-        $(".inner-circle--nav").removeClass("active-square--nav");
+        $(".inactive-square-transparent--nav").removeClass("active-square--nav");
         $(".addSix").addClass("active-square--nav");
     }), { offset: 100 };
 
@@ -47,9 +47,10 @@ spencer.functionality = function () {
     function screenSize() {
         if (window.matchMedia('(max-width: 1000px)').matches) {
             $('.nav--flex').addClass('nav--mobile').removeClass('nav--flex');
-            $('nav ul').addClass('nav--mobile-list');
+            $('.hamburger').show();
         } else {
             $('.nav--mobile').addClass('nav--flex').removeClass('nav--mobile');
+            $('.hamburger').hide();
         }
     };
 
@@ -58,8 +59,6 @@ spencer.functionality = function () {
 
     $('.nav--mobile').click(function () {
         $(this).toggleClass('open');
-        $('nav ul').toggleClass('nav--mobile-list');
-        $('nav').toggleClass('nav--mobile--background');
     });
 
     // hover state in contact

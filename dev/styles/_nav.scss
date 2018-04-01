@@ -8,123 +8,18 @@
     a {
         color: $black;
         line-height: 35px;
-        @include font-size-value(17.5);
+        @include font-size-value(16);
         text-transform: uppercase;
         letter-spacing: 0.7px;
-        transition: 0.3s;
+        transition: 0.3s all ease;
         &:hover, &:active, &:focus {
             color: $accent;
             }
         }
     }
 
-.nav--mobile--background {
-    position: fixed;
-    background: rgba($white, 0.9);
-    width: 100%;
-    right: 0;
-    height: 100%;
-    transition: 0.5s ease;
-}
 
-.nav--mobile {
-    right: 200px;
-    top: 5px;
-    text-align: right;
-    position: fixed;
-        .nav--mobile-list{
-            display: none;
-        }
-        .menu--mobile-button {
-            transition-duration: 0.5s;
-            top: 2px;
-            border-radius: 100%;
-        }
-        .icon-circle {
-            transition-duration: 0.5s;
-            position: absolute;
-            height: 60px;
-            width: 60px;
-            top: 30px;
-            background-color: $white;
-            background: transparent;
-            border: 4px solid $black;
-        }
-        .icon {
-            border-radius: 4px;
-            background-color: $black;
-            position: absolute;
-            transition-duration: 0.5s;
-            top: 30px;
-            height: 4px;
-            width: 30px;
-
-                &:before {
-                border-radius: 4px;
-                transition-duration: 0.5s;
-                position: absolute;
-                content: "";
-                height: 4px;
-                width: 30px;
-                top: -10px;
-                background-color: $black;
-                }
-            
-                &:after {
-                    border-radius: 4px;
-                    transition-duration: 0.5s;
-                    position: absolute;
-                    content: "";
-                    height: 4px;
-                    width: 30px;
-                    top: 10px;
-                    background-color: $black;
-                }
-        }
-            &.open {
-                ul {
-                    position: fixed;
-                    top: 30%;
-                    left: 35%;
-                    a {
-                        color: $black;
-                        @include font-size-value(22);
-                        text-transform: uppercase;
-                        letter-spacing: 0.7px;
-                        transition: 0.3s;
-                        &:hover, &:active, &:focus {
-                            color: $accent;
-                            }
-                    }
-                    li {
-                        margin: 15px 0;
-                    }
-                }
-                .icon-circle {
-                background: #fff;
-                }
-                .icon {
-                transition-duration: 0.5s;
-                background: transparent;
-                
-                    &:before{
-                        transform: rotateZ(45deg) scaleX(1.25) translate(6.5px, 6.5px);
-                    }
-
-                    &:after{
-                        transform: rotateZ(-45deg) scaleX(1.25) translate(6px, -6px);
-                    }
-                }
-            }
-            &:hover {
-                cursor: pointer;
-            }
-
-}
-
-
-
-.inner-circle--nav {
+.inactive-square-transparent--nav {
     background: transparent;
     height: 8px;
     width: 8px;
@@ -140,13 +35,88 @@
     top: -2px;
 }
 
-    // media queries
 
-// @media (max-width: 1000px) { 
-//     .nav--flex{
-//     display: none;
-//     }
-//     .nav--mobile {
-//         display: block;
-//     }
-// }
+.nav--mobile {
+    right: 100px;
+    top: 35px;
+    position: fixed;
+    cursor: pointer;
+    z-index: 3;
+
+        ul {
+            display: none;
+        }
+
+
+    &.open {
+            position: fixed;
+            background: rgba($white, 0.9);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            transition: 0.4s ease;
+
+        .hamburger {
+            position: fixed;
+            right: 80px;
+            top: 30px;
+
+        .red {
+            background: red;
+            transform: rotate(40deg);
+        }
+        .blue {
+            background: blue;
+            transform: translate(40px);
+            transform: rotate(90deg);
+            transform-origin: top left;
+            // width: to make fatter
+            // height: to make longer
+            // transform: translate() to move around
+            // transform-origin: where it rotates from
+            // transform: rotate() to rotate
+
+        }
+        .green {
+            background: green;
+        }
+
+    }
+
+        ul {
+            display: block;
+            position: fixed;
+            left: 42%;
+            top: 30%;
+                a {
+                    @include font-size-value(18);
+                    line-height: 35px;
+                    text-transform: uppercase;
+                }
+
+        }
+    }
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+
+    span {
+        height: 4px;
+        width: 27px;
+        margin-top: 3px;
+        transition: 0.3s all ease;
+    }
+
+    .red {
+        background: red;
+    }
+    .blue{
+        background: blue;
+    }
+    .green {
+        background: green;
+    }
+}
