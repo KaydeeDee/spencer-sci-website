@@ -31,7 +31,7 @@ html {
 }
 
 .wrapper--inner, .wrapper--inner-no-margin {
-    max-width: 75%;
+    max-width: 74%;
 }
 
 .wrapper--inner {
@@ -63,22 +63,23 @@ a {
     text-decoration: none;
 }
 
-h1, h2, h3, p, a, button {
+h1, h2, h3,h4, p, a, button {
     color: $black;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: $main-text;
     margin-top: 0;
 }
 
-h3 {
-    @include font-size-value(16.5);
+h4 {
+    @include font-size-value(17.5);
 }
 
-p, a {
+p, a, button {
     font-family: $secondary-text;
-    @include font-size-value(15);
+    @include font-size-value(16);
+    font-weight: 400;
 }
 
 p {
@@ -106,13 +107,14 @@ section {
     text-align: center;
     text-transform: capitalize;
     margin-bottom: 20px;
-    h2 {
+    h3 {
         letter-spacing: 0.8px;
         line-height: 40px;
-        @include font-size-value(26);
+        @include font-size-value(33);
     }
     span {
         @include font-size-value(35);
+        font-weight: 700;
     }
 }
 
@@ -125,7 +127,12 @@ section {
     border: 2px solid $black;
     margin-top: 5px;
     display: inline-block;
+
+    &:hover, &:active, &:focus {
+        border-color: $accent;
     }
+
+}
 
 // links in text
 .anchor-in-text--global {

@@ -57,7 +57,7 @@ spencer.functionality = function () {
     window.addEventListener('resize', screenSize, false);
     screenSize();
 
-    $('.nav--mobile').click(function () {
+    $('.nav--mobile').on("click", function () {
         $(this).toggleClass('open');
     });
 

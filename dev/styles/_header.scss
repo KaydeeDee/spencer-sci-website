@@ -8,28 +8,28 @@
     .centering-text--header {
         display: flex;
         flex-direction: column;
-        padding-top: 8vh;
-        padding-left: 58px;
+        padding-top: 10vh;
+        padding-left: 35px;
         flex-wrap: wrap;
 
         h1 {
-            @include font-size-value(45);
+            @include font-size-value(50);
             margin-bottom: 0;
             letter-spacing: 2px;
         }
         h2 {
-            @include font-size-value(28);
+            @include font-size-value(35);
             margin-top: 6px;
             letter-spacing: 1.5px;
-            width: 250px;
+            width: 270px;
         }
     }
         img {
         position: relative;
-        bottom: 3vh;
-        left: 15vw;
-        width: 720px;
-        transform: rotate(18deg);
+        bottom: 11.5vh;
+        left: 16vw;
+        width: 770px;
+        transform: rotate(8deg);
     }
 
 
@@ -63,21 +63,21 @@
 }
 
 .ai-orcid {
-    font-size: 24px;
+    font-size: 26px;
 }
 
 .ai-google-scholar {
-    font-size: 21px;
+    font-size: 23px;
     padding-top: 2px;
 }
 
 .logo-socials--header-socials {
     .fa-twitter {
-    font-size: 21px;
+    font-size: 24px;
     padding-top: 2px;
     }
     .fa-envelope {
-        font-size: 20px;
+        font-size: 22px;
         padding-top: 1.5px;
     }
 }
