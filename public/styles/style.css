@@ -186,7 +186,7 @@ section {
   padding: 40px 10px; }
 
 .section--specifics {
-  background: #efece9; }
+  background: #f3f1ef; }
 
 .section--text {
   padding: 0 30px; }
@@ -208,23 +208,46 @@ section {
     font-weight: 700; }
 
 .button-global {
-  padding: 8px 8px;
+  padding: 8px 10px;
   text-transform: uppercase;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  border: 2px solid #373737;
   color: #373737;
-  background: transparent;
   margin-top: 5px;
+  line-height: 30px;
+  height: 45px;
   display: inline-block;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   .button-global:hover, .button-global:active, .button-global:focus {
+    color: #f19032; }
+  .button-global:before, .button-global:after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
     background: #373737;
-    color: #fefffd; }
+    content: '';
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85); }
+  .button-global:after {
+    -webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    transition: top 0.3s, opacity 0.3s, transform 0.3s;
+    transition: top 0.3s, opacity 0.3s, transform 0.3s, -webkit-transform 0.3s; }
+  .button-global:hover:before, .button-global:hover:after {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  .button-global:hover:after {
+    top: 0%;
+    opacity: 1; }
 
 .anchor-in-text--global {
-  border-bottom: 1.5px solid #f19032;
-  padding: 1px;
+  border-bottom: 1.2px dashed #f19032;
+  padding: .5px;
   -webkit-transition: 0.2s;
   transition: 0.2s; }
   .anchor-in-text--global:hover, .anchor-in-text--global:active, .anchor-in-text--global:focus {
@@ -357,7 +380,7 @@ section {
     background: green; }
 
 .top-box--header {
-  background: #efece9;
+  background: #f3f1ef;
   height: 85vh;
   margin-top: 2.2vh;
   overflow: hidden; }
@@ -515,7 +538,9 @@ section {
   padding-bottom: 4px; }
 
 .education--text-indv {
-  width: 165px; }
+  width: 165px;
+  border: 2px solid #373737;
+  padding: 8px 10px; }
   .education--text-indv p {
     margin: 0; }
 
@@ -580,19 +605,18 @@ section {
 .skills--indv-section {
   max-width: 395px;
   margin: 10px 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto; }
-  .skills--indv-section h3 {
-    text-transform: uppercase; }
+  padding: 8px; }
   .skills--indv-section .skills--indv-section-icons {
-    margin-right: 8px;
-    width: 120px;
-    -ms-flex-negative: 0;
-        flex-shrink: 0; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .skills--indv-section .skills--indv-section-icons img {
+      height: 15%;
+      width: 15%;
+      vertical-align: middle;
+      margin-bottom: 10px; }
+    .skills--indv-section .skills--indv-section-icons h4 {
+      text-transform: uppercase; }
   .skills--indv-section .skills--indv-section-words p {
     margin: 0; }
 

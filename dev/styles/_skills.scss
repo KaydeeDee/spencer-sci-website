@@ -7,15 +7,23 @@
 .skills--indv-section {
     max-width: 395px;
     margin: 10px 5px;
-    display: flex;
-    flex: 0 1 auto;
-    h3 {
-        text-transform: uppercase;
-    }
+    // border: 2px solid $black;
+    padding: 8px;
+    // display: flex;
+    // flex: 0 1 auto;
     .skills--indv-section-icons {
-        margin-right: 8px;
-        width: 120px;
-        flex-shrink: 0;
+        display: flex;
+        img {
+        // margin-right: 8px;
+        height: 15%;
+        width: 15%;
+        vertical-align: middle;
+        margin-bottom: 10px;
+        // flex-shrink: 0;
+        }
+        h4 {
+        text-transform: uppercase;
+        }
     }
     .skills--indv-section-words {
         p {

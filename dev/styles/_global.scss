@@ -5,7 +5,7 @@ $secondary-text: 'Open Sans', sans-serif;
 
 $white: rgb(254, 255, 253);
 $black: rgb(55, 55, 55);
-$light-grey: lighten(rgb(200, 190, 180), 18);
+$light-grey: lighten(rgb(200, 190, 180), 20);
 $accent: rgb(241, 144, 50);
 
 
@@ -63,7 +63,7 @@ a {
     text-decoration: none;
 }
 
-h1, h2, h3,h4, p, a, button {
+h1, h2, h3, h4, p, a, button {
     color: $black;
 }
 
@@ -121,27 +121,97 @@ section {
 // buttons
 
 .button-global {
-    padding: 8px 8px;
+    padding: 8px 10px;
     text-transform: uppercase;
-    transition: all 0.3s ease;
-    border: 2px solid $black;
+    // transition: all 0.3s ease;
+    // border: 2px solid transparent;
+    // border-right: 2px solid $black;
+    // border-left: 2px solid $black;
     color: $black;
-    background: transparent;
+    // background: lighten($black, 8);
     margin-top: 5px;
+    line-height: 30px;
+    height: 45px;
     display: inline-block;
     text-align: center;
+    position: relative;
+    // font-weight: 600;
 
     &:hover, &:active, &:focus {
-    background: $black;
-        color: $white;
+    // background: $black;
+    // border: 2px solid transparent;
+    // border-radius: 3px;
+    // transform: scale(1.1);
+    // border-bottom: 2px solid orange;
+    // box-shadow: 0px 0px 0px 3px $black;
+        color: $accent;
     }
 
+    &:before, &:after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: $black;
+    content: '';
+    transition: transform 0.3s;
+    transform: scale(0.85);
+    }
+
+    &:after {
+        transition: top 0.3s, opacity 0.3s, transform 0.3s;
+    }
+
+    &:hover:before, &:hover:after {
+        transform: scale(1);
+    }
+
+    &:hover:after {
+        top: 0%;
+        opacity: 1;
+    }
+
+    // &:before, &:after {
+    //     position: absolute;
+    //     width: 45px;
+    //     height: 2px;
+    //     background: $black;
+    //     content: '';
+    //     // opacity: 0.2;
+    //     transition: all 0.3s;
+
+    // }
+
+    // &:before {
+    //     top: 0;
+    //     left: 0;
+    //     transform: rotate(90deg);
+    //     transform-origin: 0 0;
+    // }
+
+    // &:after {
+    // right: 0;
+    // bottom: -2px;
+    // transform: rotate(90deg);
+    // transform-origin: 100% 0;
+    // }
+
+    // &:hover:before {
+    //     left: 50%;
+    //     transform: rotate(0deg) translateX(-50%);
+    // }
+
+    // &:hover:after {
+    //     right: 50%;
+    //     transform: rotate(0deg) translateX(50%);
+    // }
 }
 
 // links in text
 .anchor-in-text--global {
-    border-bottom: 1.5px solid $accent;
-    padding: 1px;
+    border-bottom: 1.2px dashed $accent;
+    padding: .5px;
     transition: 0.2s;
     &:hover, &:active, &:focus {
         color: $accent;
