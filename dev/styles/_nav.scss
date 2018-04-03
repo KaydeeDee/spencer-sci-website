@@ -1,8 +1,8 @@
 .nav--flex {
     display: flex;
     flex-direction: column;
-    left: 32px;
-    top: 180px;
+    left: 18px;
+    top: 190px;
     text-align: right;
     position: fixed;
     a {
@@ -47,10 +47,9 @@
             display: none;
         }
 
-
     &.open {
             position: fixed;
-            background: rgba($white, 0.9);
+            background: rgba($white, 0.96);
             width: 100%;
             height: 100%;
             top: 0;
@@ -92,6 +91,7 @@
                 a {
                     @include font-size-value(18);
                     line-height: 35px;
+                    letter-spacing: 2px;
                     text-transform: uppercase;
                 }
 

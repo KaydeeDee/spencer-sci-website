@@ -1,3 +1,8 @@
+.education--text {
+    display: flex;
+    justify-content: space-around;
+}
+
 .education--levels {
     font-weight: 600;
     @include font-size-value(23);
@@ -5,14 +10,25 @@
     padding-bottom: 4px;
 }
 
-.education--text {
-    display: flex;
-    justify-content: space-around;
-}
-
 .education--text-indv {
-    width: 18%;
+    width: 165px;
         p {
             margin: 0;
         }
+}
+
+@media (max-width: 760px) {
+    .education--text {
+        flex-direction: column;
+    }
+
+    .education--text-indv {
+        margin: 15px auto;
+        width: 165px;
+    }
+
+    .education--text-indv:first-child {
+        margin: 0 auto 15px;
+    }
+
 }

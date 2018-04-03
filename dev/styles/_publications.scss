@@ -1,8 +1,10 @@
 .publication--section-left, .publication--section-right  {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
+    padding: 5px 0;
     min-height: 228px;
+    // border: 1px solid black;
 }
 
 .publication--section-left {
@@ -12,7 +14,6 @@
 .publication--section-right {
     flex-wrap: wrap-reverse;
     text-align: right;
-    padding: 10px;
 }
 
 .publication--section--img {

@@ -31,7 +31,7 @@ html {
 }
 
 .wrapper--inner, .wrapper--inner-no-margin {
-    max-width: 74%;
+    max-width: 76%;
 }
 
 .wrapper--inner {
@@ -125,11 +125,15 @@ section {
     text-transform: uppercase;
     transition: all 0.3s ease;
     border: 2px solid $black;
+    color: $black;
+    background: transparent;
     margin-top: 5px;
     display: inline-block;
+    text-align: center;
 
     &:hover, &:active, &:focus {
-        border-color: $accent;
+    background: $black;
+        color: $white;
     }
 
 }

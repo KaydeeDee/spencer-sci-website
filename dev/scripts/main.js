@@ -50,7 +50,6 @@ spencer.functionality = () => {
         else {
             $('.nav--mobile').addClass('nav--flex').removeClass('nav--mobile');
             $('.hamburger').hide();
-            
         }
     };
 
@@ -58,7 +57,7 @@ spencer.functionality = () => {
     screenSize();
 
 
-    $('.nav--mobile').on("click", function () {
+    $('.nav--mobile').on("click", function() {
         $(this).toggleClass('open');
     });
 
