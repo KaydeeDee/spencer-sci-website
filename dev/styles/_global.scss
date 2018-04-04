@@ -73,7 +73,7 @@ h1, h2, h3, h4 {
 }
 
 h4 {
-    @include font-size-value(17.5);
+    @include font-size-value(18);
 }
 
 p, a, button {
@@ -110,7 +110,7 @@ section {
     h3 {
         letter-spacing: 0.8px;
         line-height: 40px;
-        @include font-size-value(33);
+        @include font-size-value(34);
     }
     span {
         @include font-size-value(35);
@@ -121,17 +121,18 @@ section {
 // buttons
 
 .button-global {
-    padding: 8px 10px;
+    padding: 6px 10px;
     text-transform: uppercase;
-    // transition: all 0.3s ease;
+    transition: all 0.2s ease;
+    @include font-size-value(16.5);
     // border: 2px solid transparent;
     // border-right: 2px solid $black;
     // border-left: 2px solid $black;
     color: $black;
     // background: lighten($black, 8);
     margin-top: 5px;
-    line-height: 30px;
-    height: 45px;
+    // line-height: 30px;
+    // height: 45px;
     display: inline-block;
     text-align: center;
     position: relative;
@@ -145,6 +146,7 @@ section {
     // border-bottom: 2px solid orange;
     // box-shadow: 0px 0px 0px 3px $black;
         color: $accent;
+    
     }
 
     &:before, &:after {
@@ -152,60 +154,18 @@ section {
     top: 100%;
     left: 0;
     width: 100%;
-    height: 3px;
+    height: 2.4px;
     background: $black;
     content: '';
-    transition: transform 0.3s;
-    transform: scale(0.85);
     }
 
     &:after {
-        transition: top 0.3s, opacity 0.3s, transform 0.3s;
-    }
-
-    &:hover:before, &:hover:after {
-        transform: scale(1);
+        transition: 0.2s all ease;
     }
 
     &:hover:after {
         top: 0%;
-        opacity: 1;
     }
-
-    // &:before, &:after {
-    //     position: absolute;
-    //     width: 45px;
-    //     height: 2px;
-    //     background: $black;
-    //     content: '';
-    //     // opacity: 0.2;
-    //     transition: all 0.3s;
-
-    // }
-
-    // &:before {
-    //     top: 0;
-    //     left: 0;
-    //     transform: rotate(90deg);
-    //     transform-origin: 0 0;
-    // }
-
-    // &:after {
-    // right: 0;
-    // bottom: -2px;
-    // transform: rotate(90deg);
-    // transform-origin: 100% 0;
-    // }
-
-    // &:hover:before {
-    //     left: 50%;
-    //     transform: rotate(0deg) translateX(-50%);
-    // }
-
-    // &:hover:after {
-    //     right: 50%;
-    //     transform: rotate(0deg) translateX(50%);
-    // }
 }
 
 // links in text

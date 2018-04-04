@@ -4,33 +4,27 @@
 }
 
 .education--levels {
-    font-weight: 600;
-    @include font-size-value(23);
+    font-weight: 500;
+    @include font-size-value(32);
     font-family: $secondary-text;
-    padding-bottom: 4px;
+    align-items: center;
+    display: flex;
+    padding-right: 15px;
+    padding-bottom: 8px;
 }
 
 .education--text-indv {
-    width: 165px;
-    border: 2px solid $black;
-    padding: 8px 10px;
+    width: 290px;
+    padding: 10px 12px;
+    display: flex;
         p {
             margin: 0;
         }
 }
 
+
 @media (max-width: 760px) {
     .education--text {
         flex-direction: column;
     }
-
-    .education--text-indv {
-        margin: 15px auto;
-        width: 165px;
-    }
-
-    .education--text-indv:first-child {
-        margin: 0 auto 15px;
-    }
-
 }

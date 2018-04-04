@@ -11,12 +11,14 @@
     transition: 0.3s;
     height: 80px;
     width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: $black;
     i {
         color: $white;
     }
     .fa, .ai {
-        padding: 20px;
         transition: 0.3s;
     }
     .fa {

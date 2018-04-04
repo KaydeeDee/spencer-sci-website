@@ -44,8 +44,9 @@ spencer.functionality = () => {
 
     function screenSize() {
         if (window.matchMedia('(max-width: 1000px)').matches) {
-            $('.nav--flex').addClass('nav--mobile').removeClass('nav--flex');
             $('.hamburger').show();
+            $('.nav--flex').addClass('nav--mobile').removeClass('nav--flex');
+            
         }
         else {
             $('.nav--mobile').addClass('nav--flex').removeClass('nav--mobile');
@@ -56,10 +57,15 @@ spencer.functionality = () => {
     window.addEventListener('resize', screenSize, false);
     screenSize();
 
-
-    $('.nav--mobile').on("click", function() {
+    $('nav').click(function() {
+        // alert('you clicked it');
         $(this).toggleClass('open');
     });
+
+    // $('.hamburger').click(function () {
+    //     alert('testing the ham');
+    //     $(this).toggleClass('open');
+    // });
 
 
     // hover state in contact

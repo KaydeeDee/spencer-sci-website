@@ -5,24 +5,22 @@
 }
 
 .skills--indv-section {
-    max-width: 395px;
-    margin: 10px 5px;
+    max-width: 425px;
+    margin: 15px 10px;
     // border: 2px solid $black;
-    padding: 8px;
-    // display: flex;
-    // flex: 0 1 auto;
+    padding: 10px 12px;
     .skills--indv-section-icons {
         display: flex;
+        align-items: center;
         img {
-        // margin-right: 8px;
         height: 15%;
         width: 15%;
-        vertical-align: middle;
         margin-bottom: 10px;
-        // flex-shrink: 0;
         }
         h4 {
-        text-transform: uppercase;
+            text-transform: uppercase;
+            padding-top: 15px;
+            padding-right: 10px;
         }
     }
     .skills--indv-section-words {
