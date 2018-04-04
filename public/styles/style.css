@@ -325,19 +325,18 @@ section {
       right: 100px;
       top: 35px; }
       .nav--mobile.open .hamburger .red {
-        background: red;
-        -webkit-transform: rotate(40deg);
-                transform: rotate(40deg); }
+        background: #373737;
+        -webkit-transform: rotate(-30deg) translateY(1px);
+                transform: rotate(-30deg) translateY(1px); }
       .nav--mobile.open .hamburger .blue {
-        background: blue;
-        -webkit-transform: translate(40px);
-                transform: translate(40px);
-        -webkit-transform: rotate(90deg);
-                transform: rotate(90deg);
-        -webkit-transform-origin: top left;
-                transform-origin: top left; }
+        background: #373737;
+        width: 15px;
+        -webkit-transform: rotate(-30deg) translate(8px) translateY(8px);
+                transform: rotate(-30deg) translate(8px) translateY(8px); }
       .nav--mobile.open .hamburger .green {
-        background: green; }
+        background: #373737;
+        -webkit-transform: rotate(30deg) translateY(-1px);
+                transform: rotate(30deg) translateY(-1px); }
     .nav--mobile.open ul {
       display: block;
       position: fixed;
@@ -358,7 +357,10 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: 2; }
+  z-index: 2;
+  position: fixed;
+  right: 100px;
+  top: 35px; }
   .hamburger span {
     height: 4px;
     width: 27px;
@@ -366,11 +368,11 @@ section {
     -webkit-transition: 0.3s all ease;
     transition: 0.3s all ease; }
   .hamburger .red {
-    background: red; }
+    background: #373737; }
   .hamburger .blue {
-    background: blue; }
+    background: #373737; }
   .hamburger .green {
-    background: green; }
+    background: #373737; }
 
 .top-box--header {
   background: #f3f1ef;

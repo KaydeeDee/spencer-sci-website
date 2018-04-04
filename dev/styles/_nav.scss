@@ -63,23 +63,18 @@
             right: 100px;
             top: 35px;
         .red {
-            background: red;
-            transform: rotate(40deg);
+            background: $black;
+            transform: rotate(-30deg) translateY(1px);
         }
         .blue {
-            background: blue;
-            transform: translate(40px);
-            transform: rotate(90deg);
-            transform-origin: top left;
-            // width: to make fatter
-            // height: to make longer
-            // transform: translate() to move around
-            // transform-origin: where it rotates from
-            // transform: rotate() to rotate
+            background: $black;
+            width: 15px;
+            transform: rotate(-30deg) translate(8px) translateY(8px);
 
         }
         .green {
-            background: green;
+            background: $black;
+            transform: rotate(30deg) translateY(-1px);
         }
 
     }
@@ -104,6 +99,9 @@
     display: flex;
     flex-direction: column;
     z-index: 2;
+    position: fixed;
+    right: 100px;
+    top: 35px;
 
     span {
         height: 4px;
@@ -113,12 +111,12 @@
     }
 
     .red {
-        background: red;
+        background: $black;
     }
     .blue{
-        background: blue;
+        background: $black;
     }
     .green {
-        background: green;
+        background: $black;
     }
 }
