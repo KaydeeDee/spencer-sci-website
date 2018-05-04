@@ -8,7 +8,7 @@
 }
 
 .contact--socials-indv-circles {
-    transition: 0.3s;
+    transition: 0.3s all ease;
     height: 80px;
     width: 80px;
     display: flex;
@@ -19,7 +19,7 @@
         color: $white;
     }
     .fa, .ai {
-        transition: 0.3s;
+        transition: 0.3s all ease;
     }
     .fa {
         font-size: 35px;
@@ -32,7 +32,7 @@
 .contact--socials-indv {
     p {
         text-align: center;
-        transition: 0.3s;
+        transition: 0.3s all ease;
     }
 }
 
@@ -42,5 +42,11 @@
     }
     .contact--socials-indv-circles {
     background: transparent;
+    }
+}
+
+@media (max-width: 660px) {
+    .contact--socials-indv-circles  {
+        margin: 10px 20px;
     }
 }

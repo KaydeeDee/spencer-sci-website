@@ -37,12 +37,10 @@
 
 
 .nav--mobile {
-    right: 100px;
-    top: 35px;
     position: fixed;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    // width: 50px;
+    // height: 50px;
     z-index: 7;
 
         ul {
@@ -60,8 +58,8 @@
 
         .hamburger {
             position: fixed;
-            right: 100px;
-            top: 35px;
+            right: 60px;
+            top: 30px;
         .red {
             background: $black;
             transform: rotate(-30deg) translateY(1px);
@@ -89,6 +87,9 @@
                     line-height: 35px;
                     letter-spacing: 2px;
                     text-transform: uppercase;
+                        &:hover, &:focus {
+                            color: $accent;
+                        }
                 }
 
         }
@@ -100,14 +101,25 @@
     flex-direction: column;
     z-index: 2;
     position: fixed;
-    right: 100px;
-    top: 35px;
+    right: 60px;
+    top: 30px;
+    background: $white;
+    padding: 10px;
+    border-radius: 3px;
+
+        &:hover {
+            background: $black;
+        }
+
+        &:hover span {
+            background: $white;
+        }
 
     span {
         height: 4px;
         width: 27px;
         margin-top: 3px;
-        transition: 0.3s all ease;
+        transition: 0.4s all ease;
     }
 
     .red {
