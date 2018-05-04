@@ -58,14 +58,8 @@ spencer.functionality = () => {
     screenSize();
 
     $('nav').click(function() {
-        // alert('you clicked it');
         $(this).toggleClass('open');
     });
-
-    // $('.hamburger').click(function () {
-    //     alert('testing the ham');
-    //     $(this).toggleClass('open');
-    // });
 
 
     // hover state in contact

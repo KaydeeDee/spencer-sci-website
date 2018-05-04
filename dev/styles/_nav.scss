@@ -12,7 +12,7 @@
         text-transform: uppercase;
         letter-spacing: 0.7px;
         transition: 0.3s all ease;
-        &:hover, &:active, &:focus {
+        &:hover, &:focus {
             color: $accent;
             }
         }

@@ -4,7 +4,6 @@
     margin-bottom: 45px;
     padding: 5px 0;
     min-height: 228px;
-    // border: 1px solid black;
 }
 
 .publication--section-left {
@@ -38,4 +37,9 @@
 
 .publications--buttons-2nd {
     margin-left: 10px;
+}
+
+// stripping margin off bottom publication
+.publication--section-left:last-of-type {
+    margin-bottom: 0;
 }

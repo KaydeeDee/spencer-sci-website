@@ -38,12 +38,70 @@
 .logo-socials--header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     a {
         transition: 0.3s ease;
-        &:hover {
+        padding: 5px;
+
+        &:hover, &:focus {
             color: $accent;
         }
     }
+}
+
+// tooltip
+.header-socials--tooltip { 
+    display: none;
+    position: absolute;
+    background: $black;
+    color: $white;
+    border-radius: 2px;
+    padding: 10px;
+    left: -10px;
+    top: 35px;
+    text-align: center;
+    @include font-size-value(12);
+    text-transform: capitalize;
+
+        .triangle--tooltip {
+            position: absolute;
+            width: 0; 
+            height: 0; 
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 15px solid $black;
+            top: -7px;
+            right: 9px;
+        }
+}
+
+
+.logo-socials--header-socials li:first-child .triangle--tooltip {
+    right: 15px;
+}
+
+.logo-socials--header-socials li:nth-child(2) .triangle--tooltip {
+   right: 20px;
+}
+
+
+
+.logo-socials--header-socials li:first-child:hover .header-socials--tooltip,
+.logo-socials--header-socials li:nth-child(2):hover .header-socials--tooltip,
+.logo-socials--header-socials li:nth-child(3):hover .header-socials--tooltip,
+.logo-socials--header-socials li:nth-child(4):hover .header-socials--tooltip  {
+    display: block;
+}
+
+.logo-socials--header-socials li:nth-child(3) {
+    .header-socials--tooltip {
+     text-transform: uppercase;
+
+        .triangle--tooltip  {
+            right: 15px;
+        }   
+    }
+
 }
 
 .socials--header-footer {
@@ -59,19 +117,12 @@
 
 .logo-socials--header-socials {
     width: 20%;
-    padding-top: 30px;
-}
+    padding-top: 10px;
 
-.ai-orcid {
-    font-size: 26px;
-}
+    li {
+        position: relative;
+    }
 
-.ai-google-scholar {
-    font-size: 23px;
-    padding-top: 2px;
-}
-
-.logo-socials--header-socials {
     .fa-twitter {
     font-size: 24px;
     padding-top: 2px;
@@ -79,6 +130,14 @@
     .fa-envelope {
         font-size: 22px;
         padding-top: 1.5px;
+    }
+    .ai-orcid {
+    font-size: 26px;
+    }
+
+    .ai-google-scholar {
+        font-size: 23px;
+        padding-top: 2px;
     }
 }
 

@@ -3,10 +3,10 @@
 $main-text: 'Nunito Sans', sans-serif;
 $secondary-text: 'Open Sans', sans-serif;
 
-$white: rgb(254, 255, 253);
-$black: rgb(55, 55, 55);
-$light-grey: lighten(rgb(200, 190, 180), 20);
-$accent: rgb(241, 144, 50);
+$white: #fefffd;
+$black: #3a3838;
+$light-grey: #f3f1ef;
+$accent: #f19032;
 
 
 
@@ -26,12 +26,12 @@ html {
 
 // wrappers
 .wrapper--max {
-    max-width: 1750px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .wrapper--inner, .wrapper--inner-no-margin {
-    max-width: 76%;
+    max-width: 89%;
 }
 
 .wrapper--inner {
@@ -125,36 +125,24 @@ section {
     text-transform: uppercase;
     transition: all 0.2s ease;
     @include font-size-value(16.5);
-    // border: 2px solid transparent;
-    // border-right: 2px solid $black;
-    // border-left: 2px solid $black;
     color: $black;
-    // background: lighten($black, 8);
     margin-top: 5px;
-    // line-height: 30px;
-    // height: 45px;
     display: inline-block;
     text-align: center;
     position: relative;
-    // font-weight: 600;
 
     &:hover, &:active, &:focus {
-    // background: $black;
-    // border: 2px solid transparent;
-    // border-radius: 3px;
-    // transform: scale(1.1);
-    // border-bottom: 2px solid orange;
-    // box-shadow: 0px 0px 0px 3px $black;
         color: $accent;
     
     }
+
 
     &:before, &:after {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    height: 2.4px;
+    height: 2px;
     background: $black;
     content: '';
     }
@@ -165,6 +153,11 @@ section {
 
     &:hover:after {
         top: 0%;
+        background: $accent;
+    }
+
+     &:hover:before {
+        background: $accent;
     }
 }
 
@@ -179,9 +172,21 @@ section {
 }
 
 // media queries
-@media (max-width: 1380px) { 
+@media (max-width: 1410px) { 
     .wrapper--inner,  .wrapper--inner-no-margin {
-    max-width: 72%;
+    max-width: 85%;
+    }
+}
+
+@media (max-width: 1360px) { 
+    .wrapper--inner,  .wrapper--inner-no-margin {
+    max-width: 78%;
+    }
+}
+
+@media (max-width: 1279px) { 
+    .wrapper--inner,  .wrapper--inner-no-margin {
+    max-width: 70%;
     }
 }
 

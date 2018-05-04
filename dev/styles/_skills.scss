@@ -6,21 +6,29 @@
 
 .skills--indv-section {
     max-width: 425px;
-    margin: 15px 10px;
-    // border: 2px solid $black;
-    padding: 10px 12px;
+    margin: 20px 15px;
+    border: 2px solid $black;
+    padding: 20px 20px 20px 20px;
+    position: relative;
     .skills--indv-section-icons {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translate(-50%);
         display: flex;
         align-items: center;
         img {
-        height: 15%;
-        width: 15%;
+        height: 31.56px;
+        width: 31.56px;
         margin-bottom: 10px;
+        background: $light-grey;
         }
         h4 {
             text-transform: uppercase;
             padding-top: 15px;
             padding-right: 10px;
+            padding-left: 5px;
+            background: $light-grey;
         }
     }
     .skills--indv-section-words {
@@ -28,4 +36,12 @@
             margin: 0;
         }
     }
+}
+
+.skills--indv-section-icons.maps {
+    left: 210px;
+}
+
+.skills--indv-section-icons.illustration {
+    left: 215px;
 }
