@@ -9,7 +9,7 @@
         display: flex;
         flex-direction: column;
         padding-top: 10vh;
-        padding-left: 35px;
+        padding-left: 5.5vw;
         flex-wrap: wrap;
 
         h1 {
@@ -26,10 +26,10 @@
     }
         img {
         position: relative;
-        bottom: 12vh;
-        left: 17vw;
-        width: 760px;
-        transform: rotate(9deg);
+        bottom: 9vh;
+        left: 22.5vw;
+        max-width: 630px;
+        transform: rotate(10deg);
     }
 
 
@@ -83,8 +83,6 @@
 .logo-socials--header-socials li:nth-child(2) .triangle--tooltip {
    right: 20px;
 }
-
-
 
 .logo-socials--header-socials li:first-child:hover .header-socials--tooltip,
 .logo-socials--header-socials li:nth-child(2):hover .header-socials--tooltip,
