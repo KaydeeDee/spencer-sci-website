@@ -76,7 +76,7 @@ h4 {
     @include font-size-value(18);
 }
 
-p, a, button {
+p, a, button, label, input, textarea {
     font-family: $secondary-text;
     @include font-size-value(16);
     font-weight: 400;
@@ -114,7 +114,7 @@ section {
     }
     span {
         @include font-size-value(35);
-        font-weight: 700;
+        font-weight: 600;
     }
 }
 

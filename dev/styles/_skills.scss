@@ -38,10 +38,17 @@
     }
 }
 
-.skills--indv-section-icons.maps {
-    left: 210px;
-}
+// .skills--indv-section-icons.maps {
+//     left: 210px;
+// }
 
-.skills--indv-section-icons.illustration {
-    left: 215px;
+// .skills--indv-section-icons.illustration {
+//     left: 215px;
+// }
+
+@media (max-width: 500px) {
+    .skills--indv-section-icons.illustration,
+    .skills--indv-section-icons.communication {
+        transform: translatex(-55%);
+    }
 }

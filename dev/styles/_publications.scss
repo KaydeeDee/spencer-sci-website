@@ -43,3 +43,14 @@
 .publication--section-left:last-of-type {
     margin-bottom: 0;
 }
+
+@media (max-width: 578px) {
+    .publications--buttons-2nd {
+        margin-left: 0;
+    }
+    .publication--section-left, .publication--section-right {
+        .button-global {
+            margin-top: 15px;
+        }
+    }
+}
