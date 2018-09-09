@@ -63,11 +63,13 @@ spencer.functionality = function () {
 
     // hover state in contact
 
-    $('.contact--socials-indv').hover(function () {
-        $(this).addClass("contact--socials-indv--hover");
-    }, function () {
-        $(this).removeClass("contact--socials-indv--hover");
-    });
+    // $('.contact--socials-indv').hover(function() {
+    //     $(this).addClass("contact--socials-indv--hover");},
+    //     function() {
+    //     $(this).removeClass("contact--socials-indv--hover");
+    //     }
+    // );
+
 };
 
 // init    

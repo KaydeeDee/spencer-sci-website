@@ -19,6 +19,27 @@ $globalTransition: all 0.3s ease;
     font-size: ($sizeValue/10) * 1rem;
 }
 
+// fade in effect
+    @mixin fade-in-effect($duration, $delay) {
+        opacity: 0;
+        animation: fadeIn ease-in $duration;
+        animation-fill-mode: forwards;
+        animation-duration: $duration;
+        animation-delay: $delay;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: .5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
 
 // base size
 
@@ -51,6 +72,10 @@ body {
     padding: 1px;
 }
 
+.fadeInBody {
+    @include fade-in-effect(0.6s, 1s);
+}
+
 ul {
     list-style: none;
     margin: 0;
@@ -76,17 +101,17 @@ h1, h2, h3, h4 {
 }
 
 h4 {
-    @include font-size-value(18);
+    @include font-size-value(19);
 }
 
 p, a, button, label, input, textarea {
     font-family: $secondary-text;
-    @include font-size-value(16);
+    @include font-size-value(17);
     font-weight: 400;
 }
 
 p {
-    line-height: 29px;
+    line-height: 1.7;
 }
 
 section {
@@ -106,28 +131,27 @@ section {
 
 // headings
 
-.all-sections--sub-headings {
+h3 {
+    letter-spacing: 1.2px;
+    @include font-size-value(35);
     text-align: center;
     text-transform: capitalize;
-    margin-bottom: 20px;
-    h3 {
-        letter-spacing: 0.8px;
-        line-height: 40px;
-        @include font-size-value(34);
-    }
-    span {
-        @include font-size-value(35);
-        font-weight: 600;
+    margin-bottom: 30px;
+
+            span {
+            @include font-size-value(36);
+            font-weight: 600;
     }
 }
+
 
 // buttons
 
 .button-global {
     padding: 6px 10px;
-    text-transform: uppercase;
-    transition: all 0.2s ease;
-    @include font-size-value(16.5);
+    font-variant: small-caps;
+    transition: $globalTransition;
+    @include font-size-value(20.5);
     color: $black;
     margin-top: 5px;
     display: inline-block;
@@ -168,7 +192,7 @@ section {
 .anchor-in-text--global {
     border-bottom: 1.2px dashed $accent;
     padding: .5px;
-    transition: 0.2s;
+    transition: $globalTransition;
     &:hover, &:active, &:focus {
         color: $accent;
     }
@@ -182,8 +206,6 @@ section {
     color: $white;
     border-radius: 2px;
     padding: 10px;
-    left: -10px;
-    top: 35px;
     text-align: center;
     @include font-size-value(12);
     text-transform: capitalize;

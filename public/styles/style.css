@@ -131,6 +131,22 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: .5; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: .5; }
+  100% {
+    opacity: 1; } }
+
 html {
   font-size: 62.5%; }
 
@@ -150,6 +166,17 @@ html {
 body {
   background: #fefffd;
   padding: 1px; }
+
+.fadeInBody {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 0.6s;
+          animation: fadeIn ease-in 0.6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s; }
 
 ul {
   list-style: none;
@@ -172,17 +199,17 @@ h1, h2, h3, h4 {
   margin-top: 0; }
 
 h4 {
-  font-size: 18px;
-  font-size: 1.8rem; }
+  font-size: 19px;
+  font-size: 1.9rem; }
 
 p, a, button, label, input, textarea {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 400; }
 
 p {
-  line-height: 29px; }
+  line-height: 1.7; }
 
 section {
   padding: 40px 10px; }
@@ -195,27 +222,25 @@ section {
   .section--text span {
     font-style: italic; }
 
-.all-sections--sub-headings {
+h3 {
+  letter-spacing: 1.2px;
+  font-size: 35px;
+  font-size: 3.5rem;
   text-align: center;
   text-transform: capitalize;
-  margin-bottom: 20px; }
-  .all-sections--sub-headings h3 {
-    letter-spacing: 0.8px;
-    line-height: 40px;
-    font-size: 34px;
-    font-size: 3.4rem; }
-  .all-sections--sub-headings span {
-    font-size: 35px;
-    font-size: 3.5rem;
+  margin-bottom: 30px; }
+  h3 span {
+    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: 600; }
 
 .button-global {
   padding: 6px 10px;
-  text-transform: uppercase;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  font-size: 16.5px;
-  font-size: 1.65rem;
+  font-variant: small-caps;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 20.5px;
+  font-size: 2.05rem;
   color: #3a3838;
   margin-top: 5px;
   display: inline-block;
@@ -243,8 +268,8 @@ section {
 .anchor-in-text--global {
   border-bottom: 1.2px dashed #f19032;
   padding: .5px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s; }
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
   .anchor-in-text--global:hover, .anchor-in-text--global:active, .anchor-in-text--global:focus {
     color: #f19032; }
 
@@ -255,8 +280,6 @@ section {
   color: #fefffd;
   border-radius: 2px;
   padding: 10px;
-  left: -10px;
-  top: 35px;
   text-align: center;
   font-size: 12px;
   font-size: 1.2rem;
@@ -460,6 +483,9 @@ section {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 20px; }
+  .logo-socials--header .tooltip {
+    left: -10px;
+    top: 35px; }
   .logo-socials--header a {
     padding: 5px; }
     .logo-socials--header a:hover, .logo-socials--header a:focus {
@@ -522,17 +548,14 @@ section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
-
-.about-me--image {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  padding-right: 5px; }
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .about-me--text {
   width: 60%;
-  padding-left: 10px;
-  margin-top: 1%; }
+  padding-left: 10px; }
 
 @media (max-width: 1379px) {
   .about-me--text {
@@ -552,8 +575,6 @@ section {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .about-me--image {
-    padding: 0; }
   .about-me--text {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -574,6 +595,12 @@ section {
 
 .research-section--second-paragraph-spacing {
   margin-top: 30px; }
+
+.research-section--nav p {
+  position: relative; }
+  .research-section--nav p a:hover + .tooltip,
+  .research-section--nav p a:focus + .tooltip {
+    display: block; }
 
 .education--text {
   display: -webkit-box;
@@ -674,7 +701,7 @@ section {
   max-width: 425px;
   margin: 20px 15px;
   border: 2px solid #3a3838;
-  padding: 20px 20px 20px 20px;
+  padding: 25px;
   position: relative; }
   .skills--indv-section .skills--indv-section-icons {
     position: absolute;
@@ -687,10 +714,12 @@ section {
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .skills--indv-section .skills--indv-section-icons img {
-      height: 31.56px;
-      width: 31.56px;
+      width: 45px;
       margin-bottom: 10px;
       background: #f3f1ef; }
     .skills--indv-section .skills--indv-section-icons h4 {
