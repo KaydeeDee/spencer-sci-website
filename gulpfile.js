@@ -1,3 +1,4 @@
+
 'use strict'
 
 const gulp = require('gulp');
@@ -23,19 +24,23 @@ gulp.task('watch', () => {
     gulp.watch('*.html', reload);
 });
 
-gulp.task('scripts', () => {
+gulp.task('js', () => {
     gulp.src('./dev/scripts/*.js')
-    .pipe(babel({
-        presets: ['env']
-    }))
-    .pipe(gulp.dest('./public/scripts'))
-    .pipe(reload({ stream: true }));
+        .pipe(babel({
+            presets: ['env']
+        }))
+        .pipe(gulp.dest('./public/scripts'))
+        .pipe(reload({ stream: true }));
 });
 
-gulp.task('browser-sync', () => {
+gulp.task('bs', () => {
     browserSync.init({
         server: '.'
     })
 });
 
-gulp.task('default', ['browser-sync', 'styles', 'scripts', 'watch']);
+gulp.task('default', ['js', 'bs', 'styles'], () => {
+    gulp.watch('dev/**/*.js', ['js']);
+    gulp.watch('dev/**/*.scss', ['styles']);
+    gulp.watch('./public/styles/style.css', reload);
+});

@@ -8,6 +8,8 @@ $black: #3a3838;
 $light-grey: #f3f1ef;
 $accent: #f19032;
 
+$globalTransition: all 0.3s ease;
+
 
 
 // mixins
@@ -31,7 +33,7 @@ html {
 }
 
 .wrapper--inner, .wrapper--inner-no-margin {
-    max-width: 89%;
+    max-width: 90%;
 }
 
 .wrapper--inner {
@@ -61,6 +63,7 @@ img {
 
 a {
     text-decoration: none;
+    transition: $globalTransition;
 }
 
 h1, h2, h3, h4, p, a, button {
@@ -170,6 +173,33 @@ section {
         color: $accent;
     }
 }
+
+// tooltip
+.tooltip { 
+    display: none;
+    position: absolute;
+    background: $black;
+    color: $white;
+    border-radius: 2px;
+    padding: 10px;
+    left: -10px;
+    top: 35px;
+    text-align: center;
+    @include font-size-value(12);
+    text-transform: capitalize;
+
+        .triangle--tooltip {
+            position: absolute;
+            width: 0; 
+            height: 0; 
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 15px solid $black;
+            top: -7px;
+            right: 9px;
+        }
+}
+
 
 // media queries
 @media (max-width: 1410px) { 

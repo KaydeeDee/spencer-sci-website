@@ -10,7 +10,6 @@
         flex-direction: column;
         padding-top: 10vh;
         padding-left: 5.5vw;
-        flex-wrap: wrap;
 
         h1 {
             @include font-size-value(55);
@@ -39,8 +38,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
     a {
-        transition: 0.3s ease;
         padding: 5px;
 
         &:hover, &:focus {
@@ -48,33 +47,6 @@
         }
     }
 }
-
-// tooltip
-.header-socials--tooltip { 
-    display: none;
-    position: absolute;
-    background: $black;
-    color: $white;
-    border-radius: 2px;
-    padding: 10px;
-    left: -10px;
-    top: 35px;
-    text-align: center;
-    @include font-size-value(12);
-    text-transform: capitalize;
-
-        .triangle--tooltip {
-            position: absolute;
-            width: 0; 
-            height: 0; 
-            border-left: 15px solid transparent;
-            border-right: 15px solid transparent;
-            border-bottom: 15px solid $black;
-            top: -7px;
-            right: 9px;
-        }
-}
-
 
 .logo-socials--header-socials li:first-child .triangle--tooltip {
     right: 15px;
@@ -84,50 +56,46 @@
    right: 20px;
 }
 
-.logo-socials--header-socials li:first-child:hover .header-socials--tooltip,
-.logo-socials--header-socials li:nth-child(2):hover .header-socials--tooltip,
-.logo-socials--header-socials li:nth-child(3):hover .header-socials--tooltip,
-.logo-socials--header-socials li:nth-child(4):hover .header-socials--tooltip  {
+.logo-socials--header-socials li:nth-child(3) .triangle--tooltip {
+   right: 5px;
+}
+
+.logo-socials--header-socials li:nth-child(4) .triangle--tooltip {
+   right: 10px;
+}
+
+.logo-socials--header-socials li:hover .tooltip,
+.logo-socials--header-socials li:focus .tooltip  {
     display: block;
 }
 
-.logo-socials--header-socials li:nth-child(3) {
-    .header-socials--tooltip {
-     text-transform: uppercase;
-
-        .triangle--tooltip  {
-            right: 15px;
-        }   
+.logo-socials--header-socials li {
+    .tooltip {
+     text-transform: capitalize;  
     }
-
 }
 
 .socials--header-footer {
     display: flex;
     justify-content: space-around;
-}
-
-.logo-socials--header-img {
-    width: 50%;
-    padding-top: 20px;
-    margin-left: 5px;
+    align-items: center;
 }
 
 .logo-socials--header-socials {
-    width: 20%;
-    padding-top: 10px;
-
     li {
         position: relative;
+        margin: 0 5px;
+    }
+
+    li:last-of-type {
+        margin-right: 0;
     }
 
     .fa-twitter {
-    font-size: 24px;
-    padding-top: 2px;
+        font-size: 24px;
     }
     .fa-envelope {
         font-size: 22px;
-        padding-top: 1.5px;
     }
     .ai-orcid {
     font-size: 26px;
@@ -135,7 +103,6 @@
 
     .ai-google-scholar {
         font-size: 23px;
-        padding-top: 2px;
     }
 }
 
