@@ -6,6 +6,17 @@ spencer.functionality = () => {
         speed: 1350
     });
 
+    // hover and click effect on nav a
+    // function hoverClick() {
+        $('nav a').hover(function () {
+            $('nav a').addClass('navOpacity');
+            $(this).removeClass('navOpacity');
+        }, function () {
+            $('nav a').removeClass('navOpacity');
+        }
+    );
+
+
     // active states on nav
 
     $(".addZero").addClass("active-square--nav");
@@ -40,6 +51,8 @@ spencer.functionality = () => {
         $(".addSix").addClass("active-square--nav")
     }), { offset: 100 };
 
+
+
     // hamberger menu
 
     function screenSize() {
@@ -51,6 +64,7 @@ spencer.functionality = () => {
         else {
             $('.nav--mobile').addClass('nav--flex').removeClass('nav--mobile');
             $('.hamburger').hide();
+            $('nav').removeClass('open');
         }
     };
 
@@ -72,7 +86,7 @@ spencer.functionality = () => {
     // );
 
 
-};
+    };
 
 // init    
 spencer.init = () => {

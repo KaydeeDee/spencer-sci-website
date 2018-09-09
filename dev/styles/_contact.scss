@@ -14,10 +14,6 @@
     span {
         font-weight: 700;
     }
-
-    ul li {
-        // list-style-image: 
-    }
 }
 .contact-section--form {
     width: calc(50% - 20px);
@@ -29,11 +25,11 @@
             background: $white;
             border-radius: 2px;
             display: block;
+            padding: 5px;
             box-shadow: inset 0px 0px 6px -3px #3A3838;
         }
         input {
             width: 50%;
-            padding: 8px 0;
         }
 
         textarea {
@@ -71,7 +67,7 @@
         color: $white;
     }
     .fa, .ai {
-        transition: 0.3s all ease;
+        transition: $globalTransition;
     }
     .fa {
         font-size: 35px;

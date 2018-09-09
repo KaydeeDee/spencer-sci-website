@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 var spencer = {};
 
@@ -6,6 +6,15 @@ spencer.functionality = function () {
     // Smooth scroll
     $('nav a').smoothScroll({
         speed: 1350
+    });
+
+    // hover and click effect on nav a
+    // function hoverClick() {
+    $('nav a').hover(function () {
+        $('nav a').addClass('navOpacity');
+        $(this).removeClass('navOpacity');
+    }, function () {
+        $('nav a').removeClass('navOpacity');
     });
 
     // active states on nav
@@ -51,6 +60,7 @@ spencer.functionality = function () {
         } else {
             $('.nav--mobile').addClass('nav--flex').removeClass('nav--mobile');
             $('.hamburger').hide();
+            $('nav').removeClass('open');
         }
     };
 
