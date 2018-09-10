@@ -124,6 +124,7 @@ section {
 
 .section--text {
     padding: 0 30px;
+    
     span {
         font-style: italic;
     }
@@ -199,29 +200,40 @@ h3 {
 }
 
 // tooltip
-.tooltip { 
-    display: none;
-    position: absolute;
-    background: $black;
-    color: $white;
-    border-radius: 2px;
-    padding: 10px;
-    text-align: center;
-    @include font-size-value(12);
-    text-transform: capitalize;
-
-        .triangle--tooltip {
-            position: absolute;
-            width: 0; 
-            height: 0; 
-            border-left: 15px solid transparent;
-            border-right: 15px solid transparent;
-            border-bottom: 15px solid $black;
-            top: -7px;
-            right: 9px;
-        }
+.tooltip {
+    position: relative;
+    display: inline-block;
 }
 
+.tooltipText {
+    display: none;
+    min-width: 100px;
+    background-color: $black;
+    color: $white;
+    text-align: center;
+    padding: 5px 0px;
+    position: absolute;
+    z-index: 5;
+    right: 0;
+    bottom: -46px;
+    border-radius: 3px;
+}
+
+.tooltipText::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent $black transparent;
+}
+
+.tooltip:hover .tooltipText,
+.tooltip:focus .tooltipText {
+    display: block;
+}
 
 // media queries
 @media (max-width: 1410px) { 
@@ -237,12 +249,6 @@ h3 {
 }
 
 @media (max-width: 1279px) { 
-    .wrapper--inner,  .wrapper--inner-no-margin {
-    max-width: 70%;
-    }
-}
-
-@media (max-width: 1230px) { 
     .wrapper--inner,  .wrapper--inner-no-margin {
     max-width: 70%;
     }

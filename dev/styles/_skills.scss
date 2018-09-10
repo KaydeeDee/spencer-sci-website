@@ -6,7 +6,7 @@
 
 .skills--indv-section {
     max-width: 425px;
-    margin: 20px 15px;
+    margin: 20px 10px;
     border: 2px solid $black;
     padding: 25px;
     position: relative;
@@ -39,13 +39,15 @@
     }
 }
 
-// .skills--indv-section-icons.maps {
-//     left: 210px;
-// }
+@media (max-width: 1280px) {
+    .skills--indv-section .skills--indv-section-icons {
+        top: -45px;
 
-// .skills--indv-section-icons.illustration {
-//     left: 215px;
-// }
+        img {
+            margin: 0;
+        }
+    }
+}
 
 @media (max-width: 500px) {
     .skills--indv-section-icons.illustration,
