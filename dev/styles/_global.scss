@@ -217,6 +217,7 @@ h3 {
     right: 0;
     bottom: -46px;
     border-radius: 3px;
+    @include fade-in-effect(0.4s, 0.25s);
 }
 
 .tooltipText::after {

@@ -70,16 +70,6 @@ spencer.functionality = function () {
     $('nav').click(function () {
         $(this).toggleClass('open');
     });
-
-    // hover state in contact
-
-    // $('.contact--socials-indv').hover(function() {
-    //     $(this).addClass("contact--socials-indv--hover");},
-    //     function() {
-    //     $(this).removeClass("contact--socials-indv--hover");
-    //     }
-    // );
-
 };
 
 // init    

@@ -5,7 +5,7 @@
 }
 
 .skills--indv-section {
-    max-width: 425px;
+    max-width: 45%;
     margin: 20px 10px;
     border: 2px solid $black;
     padding: 25px;
@@ -19,7 +19,6 @@
         align-items: center;
         justify-content: center;
         img {
-        // height: 31.56px;
         width: 45px;
         margin-bottom: 10px;
         background: $light-grey;

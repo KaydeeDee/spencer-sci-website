@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     left: 18px;
-    top: 190px;
+    top: 50%;
+    transform: translateY(-50%);
     text-align: right;
     position: fixed;
     a {
@@ -11,7 +12,7 @@
         @include font-size-value(17);
         text-transform: uppercase;
         letter-spacing: 0.7px;
-        transition: 0.3s all ease;
+        transition: $globalTransition;
         &:hover, &:focus {
             color: $accent;
             }
@@ -87,6 +88,8 @@
                     line-height: 35px;
                     letter-spacing: 2px;
                     text-transform: uppercase;
+                    transition: $globalTransition;
+
                         &:hover, &:focus {
                             color: $accent;
                         }

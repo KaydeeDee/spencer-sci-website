@@ -56,6 +56,7 @@
 
 }
 
+// tooltips
 .logo-socials--header-socials li:first-child .triangle--tooltip {
     right: 15px;
 }
@@ -83,6 +84,8 @@
     }
 }
 
+// tooltips end
+
 .socials--header-footer {
     display: flex;
     justify-content: space-around;
@@ -106,7 +109,7 @@
         font-size: 22px;
     }
     .ai-orcid {
-    font-size: 26px;
+        font-size: 26px;
     }
 
     .ai-google-scholar {
