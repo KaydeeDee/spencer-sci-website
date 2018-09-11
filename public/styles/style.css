@@ -387,12 +387,14 @@ h3 {
     background: rgba(254, 255, 253, 0.96);
     width: 100%;
     height: 100%;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease; }
     .nav--mobile.open .hamburger {
       position: fixed;
       right: 35px;
-      top: 25px; }
+      top: 25px;
+      -webkit-transition: 4s ease;
+      transition: 4s ease; }
       .nav--mobile.open .hamburger:hover span {
         background: #f19032; }
       .nav--mobile.open .hamburger .red {
@@ -412,11 +414,14 @@ h3 {
       display: block;
       position: fixed;
       left: 42%;
-      top: 30%; }
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+      .nav--mobile.open ul li {
+        padding: 10px 0; }
       .nav--mobile.open ul a {
-        font-size: 18px;
-        font-size: 1.8rem;
-        line-height: 35px;
+        font-size: 20px;
+        font-size: 2rem;
         letter-spacing: 2px;
         text-transform: uppercase;
         -webkit-transition: all 0.3s ease;
@@ -435,8 +440,8 @@ h3 {
           flex-direction: column;
   z-index: 2;
   position: fixed;
-  right: 45px;
-  top: 24px;
+  right: 35px;
+  top: 25px;
   background: #fefffd;
   padding: 15px;
   border-radius: 3px; }
@@ -446,8 +451,8 @@ h3 {
     height: 4px;
     width: 27px;
     margin-top: 3px;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease; }
   .hamburger .red {
     background: #3a3838; }
   .hamburger .blue {
@@ -766,6 +771,10 @@ h3 {
     top: -45px; }
     .skills--indv-section .skills--indv-section-icons img {
       margin: 0; } }
+
+@media (max-width: 750px) {
+  .skills--indv-section {
+    max-width: 90%; } }
 
 @media (max-width: 500px) {
   .skills--indv-section-icons.illustration,
