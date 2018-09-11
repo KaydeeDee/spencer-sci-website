@@ -534,7 +534,7 @@ h3 {
   display: block; }
 
 .logo-socials--header-socials li .tooltip {
-  text-transform: capitalize; }
+  text-transform: lowercase; }
 
 .socials--header-footer {
   display: -webkit-box;
@@ -782,10 +782,17 @@ h3 {
     -webkit-transform: translatex(-55%);
             transform: translatex(-55%); } }
 
-form {
-  width: 80%;
-  margin: 0 auto;
+.formContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center; }
+
+form {
+  width: 65%; }
   form input, form textarea {
     border: none;
     margin: 10px auto 20px;
@@ -795,11 +802,15 @@ form {
     padding: 5px;
     -webkit-box-shadow: inset 0px 0px 6px -3px #3A3838;
             box-shadow: inset 0px 0px 6px -3px #3A3838; }
-  form input {
-    width: 50%; }
-  form textarea {
-    resize: none;
-    width: 95%; }
+  form .inputContainer {
+    text-align: left; }
+    form .inputContainer input {
+      width: 100%; }
+  form .textareaContainer {
+    text-align: left; }
+    form .textareaContainer textarea {
+      resize: none;
+      width: 100%; }
   form label {
     margin: 15px 0 0 0; }
   form button {
@@ -818,7 +829,7 @@ form {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
   .contact--socials p {
-    text-transform: capitalize; }
+    text-transform: lowercase; }
 
 .contact--socials-indv-circles {
   -webkit-transition: all 0.3s ease;

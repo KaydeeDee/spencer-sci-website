@@ -1,7 +1,11 @@
-form {
-    width: 80%;
-    margin: 0 auto;
+.formContainer {
+    display: flex;
+    justify-content: center;
     text-align: center;
+}
+
+form {
+    width: 65%;
 
     input, textarea {
         border: none;
@@ -12,13 +16,22 @@ form {
         padding: 5px;
         box-shadow: inset 0px 0px 6px -3px #3A3838;
     }
-    input {
-        width: 50%;
+
+    .inputContainer {
+        text-align: left;
+
+        input {
+            width: 100%;
+        }
     }
 
-    textarea {
-        resize: none;
-        width: 95%;
+    .textareaContainer {
+        text-align: left;
+
+        textarea {
+            resize: none;
+            width: 100%;
+        }
     }
 
     label {
@@ -40,7 +53,7 @@ form {
     justify-content: space-around;
 
         p {
-            text-transform: capitalize;
+            text-transform: lowercase;
         }
 }
 

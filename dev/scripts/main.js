@@ -3,7 +3,8 @@ let spencer = {};
 spencer.functionality = () => {
     // Smooth scroll
     $('nav a').smoothScroll({
-        speed: 1350
+        speed: 1350,
+        offset: -5
     });
 
     // hover and click effect on nav a
@@ -21,35 +22,106 @@ spencer.functionality = () => {
 
     $(".addZero").addClass("active-square--nav");
 
-    $('.about-me--nav').waypoint(function () {
+    // waypoints for scroll nav
+// function sectionListeners(){
+var waypoint = new Waypoint({
+    element: document.getElementById('toTop'),
+    handler: function (direction) {
         $(".inactive-square-transparent--nav").removeClass("active-square--nav");
-        $(".addOne").addClass("active-square--nav")
-    }), { offset: 50 };
+        $(".addZero").addClass("active-square--nav");
+    },
+    offset: '-10%'
+});
 
-    $('.research-section--nav').waypoint(function () {
+var waypoint = new Waypoint({
+    element: document.getElementById('toAbout'),
+    handler: function(direction) {
         $(".inactive-square-transparent--nav").removeClass("active-square--nav");
-        $(".addTwo").addClass("active-square--nav")
-    }), { offset: 100 };
+        $(".addOne").addClass("active-square--nav");
+    },
+    offset: '1%'
+});
 
-    $('.publications-section--nav').waypoint(function () {
+var waypoint = new Waypoint({
+    element: document.getElementById('toResearch'),
+    handler: function (direction) {
         $(".inactive-square-transparent--nav").removeClass("active-square--nav");
-        $(".addThree").addClass("active-square--nav")
-    }), { offset: 100 };
+        $(".addTwo").addClass("active-square--nav");
+    },
+    offset: '5%'
+});
 
-    $('.education-section--nav').waypoint(function () {
+var waypoint = new Waypoint({
+    element: document.getElementById('toPublications'),
+    handler: function (direction) {
         $(".inactive-square-transparent--nav").removeClass("active-square--nav");
-        $(".addFour").addClass("active-square--nav")
-    }), { offset: 100 };
+        $(".addThree").addClass("active-square--nav");
+    },
+    offset: '2%'
+});
 
-    $('.skills-section--nav').waypoint(function () {
+var waypoint = new Waypoint({
+    element: document.getElementById('toEducation'),
+    handler: function (direction) {
         $(".inactive-square-transparent--nav").removeClass("active-square--nav");
-        $(".addFive").addClass("active-square--nav")
-    }), { offset: 100 };
+        $(".addFour").addClass("active-square--nav");
+    },
+    offset: '5%'
+});
 
-    $('.contact-section--nav').waypoint(function () {
+var waypoint = new Waypoint({
+    element: document.getElementById('toSkills'),
+    handler: function (direction) {
         $(".inactive-square-transparent--nav").removeClass("active-square--nav");
-        $(".addSix").addClass("active-square--nav")
-    }), { offset: 100 };
+        $(".addFive").addClass("active-square--nav");
+    },
+    offset: '5%'
+});
+
+var waypoint = new Waypoint({
+    element: document.getElementById('toContact'),
+    handler: function () {
+        $(".inactive-square-transparent--nav").removeClass("active-square--nav");
+        $(".addSix").addClass("active-square--nav");
+    },
+    offset: '15%'
+});
+// }
+
+    // $('header').waypoint(function () {
+    //     $(".inactive-square-transparent--nav").removeClass("active-square--nav");
+    //     $(".addZero").addClass("active-square--nav")
+    // }), { offset: 0 };
+
+    // $('.about-me--nav').waypoint(function() {
+    //     $(".inactive-square-transparent--nav").removeClass("active-square--nav");
+    //     $(".addOne").addClass("active-square--nav")
+    // }), { offset: 0 };
+
+    // $('.research-section--nav').waypoint(function () {
+    //     $(".inactive-square-transparent--nav").removeClass("active-square--nav");
+    //     $(".addTwo").addClass("active-square--nav")
+    // }), { offset: 0 };
+
+    // $('.publications-section--nav').waypoint(function () {
+    //     $(".inactive-square-transparent--nav").removeClass("active-square--nav");
+    //     $(".addThree").addClass("active-square--nav")
+    // }), { offset: 100 };
+
+    // $('.education-section--nav').waypoint(function () {
+    //     $(".inactive-square-transparent--nav").removeClass("active-square--nav");
+    //     $(".addFour").addClass("active-square--nav")
+    // }), { offset: 100 };
+
+    // $('.skills-section--nav').waypoint(function () {
+    //     $(".inactive-square-transparent--nav").removeClass("active-square--nav");
+    //     $(".addFive").addClass("active-square--nav")
+    // }), { offset: 100 };
+
+    // $('.contact-section--nav').waypoint(function () {
+    //     $(".inactive-square-transparent--nav").removeClass("active-square--nav");
+    //     $(".addSix").addClass("active-square--nav")
+    // }), { offset: 100 };
 
 
 

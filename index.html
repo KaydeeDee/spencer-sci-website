@@ -344,18 +344,25 @@
 			</section>
 			<section class="section--specifics wrapper--inner contact-section--nav" id="toContact">
 				<h3>contact<span>.</span></h3>
-				<form method="POST" action="https://formspree.io/smonckton@gmail.com" autocomplete="on">
+				<div class="formContainer">
+					<form method="POST" action="https://formspree.io/smonckton@gmail.com" autocomplete="on">
+						<div class="inputContainer">
+							<label for="nameFull">Name</label>
+							<input type="text" id="nameFull" name="email" required="true">
+						</div>
 
-					<label for="nameFull">Name</label>
-					<input type="text" id="nameFull" name="email" required="true">
+						<div class="inputContainer">
+							<label for="emailForm">Email</label>
+							<input type="email" id="emailForm" name="email" required="true">
+						</div>
 
-					<label for="emailForm">Email</label>
-					<input type="email" id="emailForm" name="email" required="true">
-
-					<label for="message">Message</label>
-					<textarea name="message" id="message" minlength="5" required="true" cols="30" rows="10" placeholder="Let me know how we can work together!"></textarea>
-					<button type="submit" class="button-global">send</button>
-				</form>
+						<div class="textareaContainer">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" minlength="5" required="true" cols="30" rows="10" placeholder="Let me know how we can work together!"></textarea>
+						</div>
+						<button type="submit" class="button-global">send</button>
+					</form>
+				</div>
 				<div class="contact--socials">
 					<div class="contact--socials-indv">
 						<div class="contact--socials-indv-circles">
@@ -373,7 +380,7 @@
 						<div class="contact--socials-indv-circles">
 							<a href="https://orcid.org/0000-0002-9879-9118" target="_blank"><i class="ai ai-orcid"></i></a>
 						</div>
-						<p>orchid</p>
+						<p>orcid</p>
 					</div>
 					<div class="contact--socials-indv">
 						<div class="contact--socials-indv-circles">
@@ -400,6 +407,7 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
 		<script src="https://use.fontawesome.com/863f28bd20.js"></script>
+		<!-- <script src="public/scripts/jquery.waypoints.min.js"></script> -->
 		<script src="public/scripts/jquery.waypoints.min.js"></script>
 		<script src="public/scripts/main.js"></script>
 	</body>
