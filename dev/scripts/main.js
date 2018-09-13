@@ -1,14 +1,14 @@
 let spencer = {};
 
-spencer.functionality = () => {
+spencer.effects = () => {
     // Smooth scroll
     $('nav a').smoothScroll({
         speed: 1350,
-        offset: -5
+        offset: 5
     });
 
     // hover and click effect on nav a
-    // function hoverClick() {
+    spencer.hoverClick = function() {
         $('nav a').hover(function () {
             $('nav a').addClass('navOpacity');
             $(this).removeClass('navOpacity');
@@ -16,117 +16,40 @@ spencer.functionality = () => {
             $('nav a').removeClass('navOpacity');
         }
     );
+    }
+    spencer.hoverClick();
+    
 
 
     // active states on nav
 
-    $(".addZero").addClass("active-square--nav");
-
-    // waypoints for scroll nav
-// function sectionListeners(){
-var waypoint = new Waypoint({
-    element: document.getElementById('toTop'),
-    handler: function (direction) {
-        $(".inactive-square-transparent--nav").removeClass("active-square--nav");
+    spencer.scrolling = function () {
+        // default home as active
         $(".addZero").addClass("active-square--nav");
-    },
-    offset: '-10%'
-});
 
-var waypoint = new Waypoint({
-    element: document.getElementById('toAbout'),
-    handler: function(direction) {
-        $(".inactive-square-transparent--nav").removeClass("active-square--nav");
-        $(".addOne").addClass("active-square--nav");
-    },
-    offset: '1%'
-});
+        $(window).scroll(function () {
+            let location = $(this).scrollTop();
 
-var waypoint = new Waypoint({
-    element: document.getElementById('toResearch'),
-    handler: function (direction) {
-        $(".inactive-square-transparent--nav").removeClass("active-square--nav");
-        $(".addTwo").addClass("active-square--nav");
-    },
-    offset: '5%'
-});
+            // id by section
+            $('section').each(function () {
+                let target = $(this).offset().top;
+                let targetID = $(this).attr('id');
 
-var waypoint = new Waypoint({
-    element: document.getElementById('toPublications'),
-    handler: function (direction) {
-        $(".inactive-square-transparent--nav").removeClass("active-square--nav");
-        $(".addThree").addClass("active-square--nav");
-    },
-    offset: '2%'
-});
-
-var waypoint = new Waypoint({
-    element: document.getElementById('toEducation'),
-    handler: function (direction) {
-        $(".inactive-square-transparent--nav").removeClass("active-square--nav");
-        $(".addFour").addClass("active-square--nav");
-    },
-    offset: '5%'
-});
-
-var waypoint = new Waypoint({
-    element: document.getElementById('toSkills'),
-    handler: function (direction) {
-        $(".inactive-square-transparent--nav").removeClass("active-square--nav");
-        $(".addFive").addClass("active-square--nav");
-    },
-    offset: '5%'
-});
-
-var waypoint = new Waypoint({
-    element: document.getElementById('toContact'),
-    handler: function () {
-        $(".inactive-square-transparent--nav").removeClass("active-square--nav");
-        $(".addSix").addClass("active-square--nav");
-    },
-    offset: '15%'
-});
-// }
-
-    // $('header').waypoint(function () {
-    //     $(".inactive-square-transparent--nav").removeClass("active-square--nav");
-    //     $(".addZero").addClass("active-square--nav")
-    // }), { offset: 0 };
-
-    // $('.about-me--nav').waypoint(function() {
-    //     $(".inactive-square-transparent--nav").removeClass("active-square--nav");
-    //     $(".addOne").addClass("active-square--nav")
-    // }), { offset: 0 };
-
-    // $('.research-section--nav').waypoint(function () {
-    //     $(".inactive-square-transparent--nav").removeClass("active-square--nav");
-    //     $(".addTwo").addClass("active-square--nav")
-    // }), { offset: 0 };
-
-    // $('.publications-section--nav').waypoint(function () {
-    //     $(".inactive-square-transparent--nav").removeClass("active-square--nav");
-    //     $(".addThree").addClass("active-square--nav")
-    // }), { offset: 100 };
-
-    // $('.education-section--nav').waypoint(function () {
-    //     $(".inactive-square-transparent--nav").removeClass("active-square--nav");
-    //     $(".addFour").addClass("active-square--nav")
-    // }), { offset: 100 };
-
-    // $('.skills-section--nav').waypoint(function () {
-    //     $(".inactive-square-transparent--nav").removeClass("active-square--nav");
-    //     $(".addFive").addClass("active-square--nav")
-    // }), { offset: 100 };
-
-    // $('.contact-section--nav').waypoint(function () {
-    //     $(".inactive-square-transparent--nav").removeClass("active-square--nav");
-    //     $(".addSix").addClass("active-square--nav")
-    // }), { offset: 100 };
-
-
+                // location vs. target conditional
+                if (location >= target) {
+                    $(".inactive-square-transparent--nav").removeClass("active-square--nav");
+                    $(`#${targetID}--squareActive`).addClass("active-square--nav");
+                } else if (location === 0) {
+                    $(".inactive-square-transparent--nav").removeClass("active-square--nav");
+                    $(".addZero").addClass("active-square--nav");
+                }
+            });
+        });
+    };
+    spencer.scrolling();
 
     // hamberger menu
-
+    //screen size listener
     function screenSize() {
         if (window.matchMedia('(max-width: 1000px)').matches) {
             $('.hamburger').show();
@@ -136,7 +59,7 @@ var waypoint = new Waypoint({
         else {
             $('.nav--mobile').addClass('nav--flex').removeClass('nav--mobile');
             $('.hamburger').hide();
-            $('nav').removeClass('open');
+            $('nav').removeClass('open'); //if window grows while hamburger is open, close hamburger, reset it to closed by default
         }
     };
 
@@ -147,11 +70,11 @@ var waypoint = new Waypoint({
         $(this).toggleClass('open');
     });
 
-    };
+};
 
 // init    
 spencer.init = () => {
-    spencer.functionality();
+    spencer.effects();
 };
 
 // the goods 
