@@ -621,9 +621,6 @@ h3 {
 .research-section--nav .tooltipText {
   font-style: normal; }
 
-.research-section--nav p:nth-of-type(2) .tooltipText {
-  bottom: -75px; }
-
 .education--text {
   display: -webkit-box;
   display: -ms-flexbox;

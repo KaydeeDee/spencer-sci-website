@@ -25,7 +25,7 @@ spencer.effects = () => {
 
     spencer.scrolling = function () {
         // default home as active
-        $(".addZero").addClass("active-square--nav");
+        $("#toTop").addClass("active-square--nav");
 
         $(window).scroll(function () {
             let location = $(this).scrollTop();
@@ -41,7 +41,7 @@ spencer.effects = () => {
                     $(`#${targetID}--squareActive`).addClass("active-square--nav");
                 } else if (location === 0) {
                     $(".inactive-square-transparent--nav").removeClass("active-square--nav");
-                    $(".addZero").addClass("active-square--nav");
+                    $("#toTop").addClass("active-square--nav");
                 }
             });
         });
