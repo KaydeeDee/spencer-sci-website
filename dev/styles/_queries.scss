@@ -19,14 +19,7 @@
         }
     
         .centering-text--header {
-            padding-top: 12vh;
-            padding-left: 5vw;
-            h1 {
-                // @include font-size-value(50);
-            }
-            h2 {
-                // @include font-size-value(30);
-            }
+            padding-top: 14vh;
         }   
     }
 }
@@ -60,8 +53,6 @@
             transform: rotate(20deg);
         }
         .centering-text--header {
-            padding-left: 100px;
-            padding-top: 120px;
             h1 {
                 @include font-size-value(45);
             }
@@ -117,12 +108,9 @@
     .top-box--header {
         img {
             left: 10vw;
-            // bottom: -40px;
             width: 450px;
-            // transform: rotate(25deg);
         }
         .centering-text--header {
-            // padding-left: 22px;
             h1 {
                 @include font-size-value(40);
             }
@@ -198,41 +186,15 @@
     .top-box--header {
         img {
             left: 3vw;
-            bottom: -50px;
             width: 300px;
         }
         .centering-text--header {
             padding-top: 30vw;
-            h1 {
-                @include font-size-value(25);
-            }
-            h2 {
-                @include font-size-value(21);
-            }
         }   
     }
 }
 
 // iPad
-
-// ipad pro landscape
-@media only screen 
-and (min-height: 1024px) 
-and (min-width: 1366px) 
-and(orientation: landscape){
-    .top-box--header {
-        img {
-            left: 21vw;
-            bottom: 5vh;
-            width: 610px;
-        }
-    }
-    .top-box--header .centering-text--header {
-        padding-top: 17vh;
-        padding-left: 70px;
-    }
-}
-
 
 // ipad pro portrait 
 @media only screen 
@@ -241,9 +203,6 @@ and (max-device-width: 1024px)
 and (orientation: portrait) {
     .top-box--header {
         img {
-            left: 19vw;
-            bottom: 0vh;
-            width: 400px;
             transform: rotate(25deg);
         }
     }
@@ -283,14 +242,6 @@ and (orientation: landscape) {
 and (min-device-width: 768px) 
 and (max-device-width: 1024px) 
 and (orientation: portrait) {
-      .top-box--header {
-        img {
-            left: 25vw;
-            bottom: 1vh;
-            width: 400px;
-            transform: rotate(25deg);
-        }
-    }
     .top-box--header .centering-text--header {
         padding-top: 22vh;
             h1 {
@@ -306,7 +257,6 @@ and (orientation: portrait) {
 // ipad regular landscape
 @media only screen 
 and (max-device-width: 830px) 
-and (max-device-height: 412px)
 and (orientation: landscape) {
      .top-box--header {
         img {

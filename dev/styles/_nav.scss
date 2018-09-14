@@ -8,7 +8,8 @@
     position: fixed;
     a {
         color: $black;
-        line-height: 35px;
+        display: inline-block;
+        padding: 5px 0;
         @include font-size-value(17);
         text-transform: uppercase;
         letter-spacing: 0.7px;
@@ -142,4 +143,18 @@
 
 .navOpacity {
     opacity: 0.4;
+}
+
+
+// media queries for large screens
+@media (min-width:1550px) {
+    .nav--flex {
+        left: 50px;
+    }
+}
+
+@media (min-width:1680px) {
+    .nav--flex {
+        left: 100px;
+    }
 }
