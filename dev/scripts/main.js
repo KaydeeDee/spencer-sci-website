@@ -54,12 +54,13 @@ spencer.effects = () => {
         if (window.matchMedia('(max-width: 1000px)').matches) {
             $('.hamburger').show();
             $('.nav--flex').addClass('nav--mobile').removeClass('nav--flex');
-            
+            $('.anchor-in-text--global').removeClass('tooltip'); //disable tooltip for mobile
         }
         else {
             $('.nav--mobile').addClass('nav--flex').removeClass('nav--mobile');
             $('.hamburger').hide();
             $('nav').removeClass('open'); //if window grows while hamburger is open, close hamburger, reset it to closed by default
+            $('.anchor-in-text--global').addClass('tooltip'); //disable tooltip for mobile
         }
     };
 

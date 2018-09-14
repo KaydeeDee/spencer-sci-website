@@ -150,6 +150,12 @@
     opacity: 0.4;
 }
 
+//queries for small screens
+@media (min-width: 320px){
+    .nav--mobile.open ul {
+        left: 30%;
+    }
+}
 
 // media queries for large screens
 @media (min-width:1550px) {
@@ -173,5 +179,11 @@
 @media (min-width:1900px) {
     .nav--flex {
         left: 200px;
+    }
+}
+
+@media (min-width:2000px) {
+    .nav--flex {
+        left: 250px;
     }
 }

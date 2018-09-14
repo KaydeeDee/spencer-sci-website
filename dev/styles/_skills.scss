@@ -60,3 +60,14 @@
         transform: translatex(-55%);
     }
 }
+
+@media (max-width: 320px) {
+    .skills--indv-section-icons.illustration,
+    .skills--indv-section-icons.communication {
+        transform: translatex(-50%);
+    }
+
+    .skills--indv-section .skills--indv-section-icons {
+        top: -48px;
+    }
+}

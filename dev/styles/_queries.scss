@@ -194,6 +194,15 @@
     }
 }
 
+
+@media (max-width: 320px) {
+    .top-box--header {
+        img {
+            width: 250px
+        }
+    }
+}
+
 // iPad
 
 // ipad pro portrait 
@@ -262,7 +271,17 @@ and (orientation: landscape) {
     }
 }
 
-// larger screens catchall
+// larger screens catchalls
+@media (min-width: 1450px) {
+     .top-box--header {
+        img {
+            bottom: 0vh;
+            transform: rotate(19deg);
+            left: 20vw;
+        }
+    }
+}
+
 @media (min-width: 1500px) {
      .top-box--header {
         img {
