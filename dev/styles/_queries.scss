@@ -220,18 +220,15 @@ and (orientation: landscape) {
     .top-box--header {
         img {
             left: 21vw;
-            bottom: 2vh;
-            width: 400px;
+            width: 420px;
             transform: rotate(22deg);
         }
     }
     .top-box--header .centering-text--header {
-        padding-top: 14vh;
-        padding-left: 20px;
             h1 {
             @include font-size-value(45);
             }
-        h2 {
+            h2 {
             @include font-size-value(35);
         }
     }
@@ -261,6 +258,17 @@ and (orientation: landscape) {
      .top-box--header {
         img {
             display: none;
+        }
+    }
+}
+
+// larger screens catchall
+@media (min-width: 1500px) {
+     .top-box--header {
+        img {
+            bottom: -2vh;
+            transform: rotate(20deg);
+            left: 18vw;
         }
     }
 }

@@ -354,6 +354,8 @@ h3 {
           transform: translateY(-50%);
   text-align: right;
   position: fixed; }
+  .nav--flex li {
+    height: 35px; }
   .nav--flex a {
     color: #3a3838;
     display: inline-block;
@@ -474,6 +476,14 @@ h3 {
 @media (min-width: 1680px) {
   .nav--flex {
     left: 100px; } }
+
+@media (min-width: 1800px) {
+  .nav--flex {
+    left: 150px; } }
+
+@media (min-width: 1900px) {
+  .nav--flex {
+    left: 200px; } }
 
 .top-box--header {
   background: #f3f1ef;
@@ -1062,19 +1072,15 @@ footer a {
 @media only screen and (min-device-width: 1024px) and (max-device-height: 768px) and (orientation: landscape) {
   .top-box--header img {
     left: 21vw;
-    bottom: 2vh;
-    width: 400px;
+    width: 420px;
     -webkit-transform: rotate(22deg);
             transform: rotate(22deg); }
-  .top-box--header .centering-text--header {
-    padding-top: 14vh;
-    padding-left: 20px; }
-    .top-box--header .centering-text--header h1 {
-      font-size: 45px;
-      font-size: 4.5rem; }
-    .top-box--header .centering-text--header h2 {
-      font-size: 35px;
-      font-size: 3.5rem; } }
+  .top-box--header .centering-text--header h1 {
+    font-size: 45px;
+    font-size: 4.5rem; }
+  .top-box--header .centering-text--header h2 {
+    font-size: 35px;
+    font-size: 3.5rem; } }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .top-box--header .centering-text--header {
@@ -1089,3 +1095,10 @@ footer a {
 @media only screen and (max-device-width: 830px) and (orientation: landscape) {
   .top-box--header img {
     display: none; } }
+
+@media (min-width: 1500px) {
+  .top-box--header img {
+    bottom: -2vh;
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+    left: 18vw; } }

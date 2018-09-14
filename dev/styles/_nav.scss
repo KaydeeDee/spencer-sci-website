@@ -6,6 +6,11 @@
     transform: translateY(-50%);
     text-align: right;
     position: fixed;
+
+    li {
+        height: 35px;
+    }
+
     a {
         color: $black;
         display: inline-block;
@@ -156,5 +161,17 @@
 @media (min-width:1680px) {
     .nav--flex {
         left: 100px;
+    }
+}
+
+@media (min-width:1800px) {
+    .nav--flex {
+        left: 150px;
+    }
+}
+
+@media (min-width:1900px) {
+    .nav--flex {
+        left: 200px;
     }
 }
