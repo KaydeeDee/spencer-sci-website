@@ -1,14 +1,13 @@
 footer {
-    padding: 1px;
+    padding: 25px 0;
     display: flex;
     justify-content: center;
 }
 
 footer a {
     display: inline-block;
-    padding: 10px 0;
     @include font-size-value(10);
-    transition: 0.4s;
+    transition: $globalTransition;
     &:hover {
         color: $accent;
     }

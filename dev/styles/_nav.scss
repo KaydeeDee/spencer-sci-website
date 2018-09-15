@@ -7,18 +7,16 @@
     text-align: right;
     position: fixed;
 
-    li {
-        height: 35px;
-    }
-
     a {
         color: $black;
         display: inline-block;
-        padding: 5px 0;
+        padding: 8px 0;
         @include font-size-value(17);
         text-transform: uppercase;
         letter-spacing: 0.7px;
         transition: $globalTransition;
+        transform: translate3d(0px,0px,0px); //chrome jumping fix
+
         &:hover, &:focus {
             color: $accent;
             }
@@ -148,10 +146,11 @@
 
 .navOpacity {
     opacity: 0.4;
+    // @include fade-in-effect(0.2s, 0s);
 }
 
 //queries for small screens
-@media (min-width: 320px){
+@media (max-width: 370px){
     .nav--mobile.open ul {
         left: 30%;
     }

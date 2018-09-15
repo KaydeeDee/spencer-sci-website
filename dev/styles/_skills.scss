@@ -38,6 +38,12 @@
     }
 }
 
+.skills--indv-section:nth-of-type(3) {
+    .tooltipText {
+                bottom: -70px;
+            }
+    }
+
 @media (max-width: 1280px) {
     .skills--indv-section .skills--indv-section-icons {
         top: -45px;
