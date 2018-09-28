@@ -52,7 +52,7 @@ spencer.effects = function () {
 
     // hamberger menu
     //screen size listener
-    function screenSize() {
+    spencer.screenSize = function () {
         if (window.matchMedia("(max-width: 1000px)").matches) {
             $(".hamburger").show();
             $(".nav--flex").addClass("nav--mobile").removeClass("nav--flex");
@@ -65,8 +65,8 @@ spencer.effects = function () {
         }
     };
 
-    window.addEventListener("resize", screenSize, false);
-    screenSize();
+    window.addEventListener("resize", spencer.screenSize, false);
+    spencer.screenSize();
 
     // toggling mobile nav full screen ul
     $("nav").click(function () {

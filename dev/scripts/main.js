@@ -1,4 +1,4 @@
-let spencer = {};
+const spencer = {};
 
 spencer.effects = () => {
     // Smooth scroll
@@ -8,7 +8,7 @@ spencer.effects = () => {
     });
 
     // hover and click effect on nav a
-    spencer.hoverClick = function() {
+    spencer.hoverClick = () => {
         $("nav a").hover(function() {
             $("nav a").addClass("navOpacity");
             $(this).removeClass("navOpacity");
@@ -23,7 +23,7 @@ spencer.effects = () => {
 
     // active states on nav
     //below is a waypoint solution that C.Keeley used. Visit her at www.chelseakeeley.com 
-    spencer.scrolling = function () {
+    spencer.scrolling = () => {
         // default home as active
         $("#toTop--squareActive").addClass("active-square--nav");
 
@@ -53,7 +53,7 @@ spencer.effects = () => {
 
     // hamberger menu
     //screen size listener
-    function screenSize() {
+    spencer.screenSize = () => {
         if (window.matchMedia("(max-width: 1000px)").matches) {
             $(".hamburger").show();
             $(".nav--flex").addClass("nav--mobile").removeClass("nav--flex");
@@ -67,8 +67,8 @@ spencer.effects = () => {
         }
     };
 
-    window.addEventListener("resize", screenSize, false);
-    screenSize();
+    window.addEventListener("resize", spencer.screenSize, false);
+    spencer.screenSize();
 
     // toggling mobile nav full screen ul
     $("nav").click(function() {
