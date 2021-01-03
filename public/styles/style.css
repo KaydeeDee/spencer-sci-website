@@ -168,6 +168,9 @@ body {
   padding: 1px;
   overflow-wrap: break-word; }
 
+img {
+  pointer-events: none; }
+
 .fadeInBody {
   opacity: 0;
   -webkit-animation: fadeIn ease-in 0.6s;
@@ -921,15 +924,10 @@ form {
 
 footer {
   padding: 25px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  text-align: center; }
 
 footer a {
-  display: inline-block;
+  display: block;
   font-size: 10px;
   font-size: 1rem;
   -webkit-transition: all 0.3s ease;

@@ -1,11 +1,10 @@
 footer {
     padding: 25px 0;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 footer a {
-    display: inline-block;
+    display: block;
     @include font-size-value(10);
     transition: $globalTransition;
     &:hover {

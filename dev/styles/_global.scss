@@ -73,6 +73,10 @@ body {
      overflow-wrap: break-word; //for smaller screen size + publication/species names
 }
 
+img {
+    pointer-events: none;
+}
+
 .fadeInBody {
     @include fade-in-effect(0.6s, 1s);
 }
